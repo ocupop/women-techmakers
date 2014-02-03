@@ -9,16 +9,15 @@
   text-transform: uppercase
 
   .nav-container
-    max-width: $container
     min-height: $line * 2
     margin: 0 auto
 
     &.ui-show
-      background-color: $color-darkblue
+      background-color: #333
 
     +bk(3)
       min-height: 0
-      background-color: $color-darkblue
+      background-color: #333
       height: $line + $font-small
 
   ul
@@ -42,7 +41,7 @@
       font-size: $font-small + 1px
 
   a
-    //
+    color: white
 
   .current-nav-item:before
     background-color: $color-lightblue

@@ -13,10 +13,6 @@ a
   color: inherit
   text-decoration: none
 
-img
-  display: block
-  margin: 0 auto
-
 .container
   padding: 0 $gtr * 2
   max-width: $container
@@ -28,17 +24,21 @@ p
   font-size: $font
   line-height: $line + $border
   padding-bottom: $line
+
   a
     text-decoration: underline
 
+strong
+  font-weight: bold
+
 h2,
 h3
-  text-transform: uppercase
   padding-bottom: $line
 
 h2
   font-size: $line
   line-height: $line * 1.2
+  text-align: center
 
   +bk(2)
     font-size: $line * 1.3
@@ -50,20 +50,56 @@ h3
 .page-header
   z-index: 10
   padding: $line * 4 0 0
+  text-align: center
   width: 100%
 
-  +bk(3)
-    padding-bottom: $line * 4
+  h1.site-title
+    +clearfix
 
-  img
-    max-width: 100%
+    img,
+    span
+      display: inline-block
 
-  +bk(3)
-    +absolute(top, left)
+    img
+      width: 120px
+
+    span
+      color: #666
+      font-size: 52px
+      letter-spacing: -2px
+      margin-left: $line
+      vertical-align: $line * 1.4
+
+      strong
+        font-weight: bold
+
+  h2
+    font-size: 48px
+    margin-top: $line*3
+
+  p
+    margin: 0 auto
+    padding: 0
+
+    &.tagline
+      font-weight: bold
+      margin-top: $line/2
+      width: $container*.6
+
+    & + p
+      font-size: $font-small
+      line-height: 1.6
+      width: $container * .5
+
+  a
+    @extend .button.blue
+    display: inline-block
+    margin-top: $line*2
 
 section
   z-index: 10
-  padding: $line * 2 0 $line
+  margin: 0
+  padding: $line*2 0 $line
 
 input,
 button
@@ -72,3 +108,25 @@ button
   border: none
   font-family: inherit
   border-radius: 0
+
+.button
+  background-color: $color-blue
+  @include border-radius($gtr/2)
+  color: white
+  font-size: 20px
+  font-weight: bold
+  padding: $line/2 $line
+
+  &.blue
+    // IE6-9 fallback on horizontal gradient
+    @include filter-gradient($color-blue, $color-darkblue, horizontal)
+
+    // Two colors, diagonal split
+    @include background-image(linear-gradient(-25deg, $color-darkblue 0%, $color-darkblue 50%, $color-blue 50%, $color-blue 100%))
+
+  &.green
+    // IE6-9 fallback on horizontal gradient
+    @include filter-gradient($color-green, $color-darkgreen, horizontal)
+
+    // Two colors, diagonal split
+    @include background-image(linear-gradient(-25deg, $color-darkgreen 0%, $color-darkgreen 50%, $color-green 50%, $color-green 100%))
