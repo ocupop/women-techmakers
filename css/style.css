@@ -315,6 +315,9 @@ button {
   background: #48c1ed;
   color: white;
   margin: 0 0 48px 0; }
+  /* line 6, sass/_social.sass */
+  .social-section h2 {
+    margin-bottom: -84px; }
 
 /* line 2, sass/_locations.sass */
 .location-section .map-canvas {
