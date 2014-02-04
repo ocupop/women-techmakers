@@ -313,9 +313,8 @@ button {
 /* line 1, sass/_social.sass */
 .social-section {
   background: #48c1ed;
-  color: white;
-  margin: 0 0 48px 0; }
-  /* line 6, sass/_social.sass */
+  color: white; }
+  /* line 5, sass/_social.sass */
   .social-section h2 {
     margin-bottom: -84px; }
 
@@ -330,101 +329,97 @@ button {
 /* line 9, sass/_events.sass */
 .events-section .infoBox {
   width: 320px !important; }
-/* line 12, sass/_events.sass */
-.events-section .infoBox img {
-  z-index: 10; }
-/* line 15, sass/_events.sass */
+  /* line 12, sass/_events.sass */
+  .events-section .infoBox img {
+    border-radius: 4.8px;
+    margin: 6px !important;
+    z-index: 10; }
+/* line 17, sass/_events.sass */
 .events-section .location-switch-modes {
   width: 100%;
   position: absolute;
   z-index: 100;
   text-align: center;
   border-top: 4px solid #4571b4; }
-  /* line 22, sass/_events.sass */
+  /* line 24, sass/_events.sass */
   .events-section .location-switch-modes button {
     display: inline-block;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
     text-transform: uppercase;
     color: white;
-    background-color: white;
-    height: 32px;
+    background-color: #6bc2a1;
+    height: 36px;
     padding: 0 24px;
     margin: 0 -4px; }
-    /* line 32, sass/_events.sass */
+    /* line 35, sass/_events.sass */
     .events-section .location-switch-modes button:focus {
       outline: none; }
-    /* line 35, sass/_events.sass */
-    .events-section .location-switch-modes button:before, .events-section .location-switch-modes button:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      border-width: 32px 16px;
-      border-style: solid;
-      border-color: white transparent transparent;
-      width: 0; }
-    /* line 45, sass/_events.sass */
-    .events-section .location-switch-modes button:before {
-      left: -16px; }
-    /* line 48, sass/_events.sass */
-    .events-section .location-switch-modes button:after {
-      right: -16px; }
-    /* line 51, sass/_events.sass */
+    /* line 38, sass/_events.sass */
     .events-section .location-switch-modes button.ui-show {
       background-color: #4571b4;
       z-index: 10; }
-      /* line 55, sass/_events.sass */
-      .events-section .location-switch-modes button.ui-show:before, .events-section .location-switch-modes button.ui-show:after {
-        border-top-color: #4571b4; }
-/* line 59, sass/_events.sass */
+/* line 42, sass/_events.sass */
 .events-section .event-infobox {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 12px 12px;
-  border: 4px solid; }
-  /* line 64, sass/_events.sass */
+  background-color: rgba(69, 113, 180, 0.9);
+  border-radius: 6px;
+  padding: 12px 12px; }
+  /* line 47, sass/_events.sass */
   .events-section .event-infobox h3,
   .events-section .event-infobox p {
+    color: #eeeeee;
     font-family: "Open Sans", sans-serif;
     line-height: 1; }
-  /* line 69, sass/_events.sass */
+  /* line 53, sass/_events.sass */
   .events-section .event-infobox p {
     padding-bottom: 0; }
-  /* line 72, sass/_events.sass */
+  /* line 56, sass/_events.sass */
   .events-section .event-infobox h3 {
-    padding-bottom: 6px; }
-  /* line 75, sass/_events.sass */
+    font-size: 18px;
+    line-height: 1.3;
+    padding-bottom: 12px; }
+  /* line 61, sass/_events.sass */
   .events-section .event-infobox a {
     text-decoration: underline;
     font-size: inherit;
     font-family: inherit; }
-/* line 80, sass/_events.sass */
+/* line 66, sass/_events.sass */
 .events-section .location-event-list {
   margin: 0px;
-  padding-top: 12px; }
-  /* line 84, sass/_events.sass */
+  padding-top: 72px; }
+  /* line 70, sass/_events.sass */
   .events-section .location-event-list .event-wrapper {
+    clear: both;
     padding: 12px 12px; }
-  /* line 87, sass/_events.sass */
+  /* line 74, sass/_events.sass */
   .events-section .location-event-list time {
-    color: #567ebd; }
-  /* line 90, sass/_events.sass */
+    color: #888888;
+    float: left;
+    font-size: 14px;
+    padding-top: 3px; }
+  /* line 80, sass/_events.sass */
   .events-section .location-event-list a {
     text-decoration: underline;
     cursor: pointer; }
-  /* line 94, sass/_events.sass */
+  /* line 84, sass/_events.sass */
+  .events-section .location-event-list .event-title,
+  .events-section .location-event-list .event-location {
+    margin-left: 130px; }
+  /* line 88, sass/_events.sass */
   .events-section .location-event-list .event-title {
-    text-transform: uppercase;
     font-size: 24px;
+    font-weight: bold;
     padding-bottom: 0; }
-  /* line 99, sass/_events.sass */
+  /* line 93, sass/_events.sass */
   .events-section .location-event-list .event-location {
     padding-bottom: 0; }
 
-/* line 102, sass/_events.sass */
+/* line 96, sass/_events.sass */
 .location-section .event-wrapper.ui-show {
   background-color: #4571b4; }
 
 @media (min-width: 960px) {
-  /* line 107, sass/_events.sass */
+  /* line 101, sass/_events.sass */
   .csstransforms .location-section .top-border,
   .csstransforms .location-section .bottom-border {
     position: absolute;
@@ -436,18 +431,18 @@ button {
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s; }
-    /* line 116, sass/_events.sass */
+    /* line 110, sass/_events.sass */
     .csstransforms .location-section .top-border:before, .csstransforms .location-section .top-border:after,
     .csstransforms .location-section .bottom-border:before,
     .csstransforms .location-section .bottom-border:after {
       content: "";
       position: absolute;
       height: 57.73503%; }
-  /* line 122, sass/_events.sass */
+  /* line 116, sass/_events.sass */
   .csstransforms .location-section .top-border {
     top: 0;
     border-top: 4px solid #4571b4; }
-    /* line 126, sass/_events.sass */
+    /* line 120, sass/_events.sass */
     .csstransforms .location-section .top-border:before {
       top: -2px;
       left: 0;
@@ -462,7 +457,7 @@ button {
       -ms-transform-origin: 0 0;
       -o-transform-origin: 0 0;
       transform-origin: 0 0; }
-    /* line 133, sass/_events.sass */
+    /* line 127, sass/_events.sass */
     .csstransforms .location-section .top-border:after {
       top: 0;
       right: -1px;
@@ -477,11 +472,11 @@ button {
       -ms-transform-origin: 0 0;
       -o-transform-origin: 0 0;
       transform-origin: 0 0; }
-  /* line 140, sass/_events.sass */
+  /* line 134, sass/_events.sass */
   .csstransforms .location-section .bottom-border {
     bottom: 0;
     border-bottom: 4px solid #4571b4; }
-    /* line 144, sass/_events.sass */
+    /* line 138, sass/_events.sass */
     .csstransforms .location-section .bottom-border:before {
       bottom: 0;
       left: -1px;
@@ -496,7 +491,7 @@ button {
       -ms-transform-origin: 100% 100%;
       -o-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
-    /* line 151, sass/_events.sass */
+    /* line 145, sass/_events.sass */
     .csstransforms .location-section .bottom-border:after {
       bottom: -2px;
       right: 0;
@@ -511,10 +506,10 @@ button {
       -ms-transform-origin: 100% 100%;
       -o-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
-  /* line 158, sass/_events.sass */
+  /* line 152, sass/_events.sass */
   .csstransforms .location-section .event-wrapper.ui-show {
     background-color: transparent; }
-    /* line 161, sass/_events.sass */
+    /* line 155, sass/_events.sass */
     .csstransforms .location-section .event-wrapper.ui-show .top-border,
     .csstransforms .location-section .event-wrapper.ui-show .bottom-border {
       opacity: 1; } }
