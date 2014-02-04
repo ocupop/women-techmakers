@@ -4,18 +4,18 @@
 
 =multi-background($name)
   // giant displays, e.g. HDTV and larger
-  background-image: image-url("bg/src/" + $name + '.jpg')
+  background-image: image-url($name + '.jpg')
   background-size: cover
   // most displays
   @media screen and (max-width: 1600px)
     background-size: auto
-    background-image: image-url("bg/" + $name + "-large.jpg")
+    background-image: image-url($name + "-large.jpg")
   // small displays; largest image that iOS can load into single memory buffer
   @media screen and (max-width: 1024px)
-    background-image: image-url("bg/" +$name + "-medium.jpg")
+    background-image: image-url($name + "-medium.jpg")
   // "phablets"
   @media screen and (max-width: 640px)
-    background-image: image-url("bg/" +$name + "-small.jpg")
+    background-image: image-url($name + "-small.jpg")
 
 =position($y, $x)
   @if ($y == 'top')
