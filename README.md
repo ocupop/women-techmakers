@@ -8,12 +8,11 @@ The website for Google’s **Women Techmakers** conferences.
 ### Requirements
 
 - SASS compiler
-- CoffeeScript compiler
 
 There is a `config.rb` Compass configuration file in the root. You have two choices:
 
 - Run `compass watch` from the command line.
-- Use an app like CodeKit to process changes (and refresh the browser).
+- Use an app like CodeKit to process changes (and refresh the browser). (This is how the site was developed. Using another option may require additional configuration.)
 
 
 ## Credits
