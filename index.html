@@ -32,9 +32,9 @@
 <nav class="page-nav" ng-controller="NavCtrl">
   <div class="nav-container" ui-show="nav.show_mobile">
     <ul>
-      <li><a href="#home"       ocu-scroll-click class="current-nav-item">Home</a></li>
-      <li><a href="#locations"  ocu-scroll-click>Events</a></li>
-      <li><a href="#faq"        ocu-scroll-click>FAQ</a></li>
+      <li><a href="#home"   ocu-scroll-click class="current-nav-item">Home</a></li>
+      <li><a href="#events" ocu-scroll-click>Events</a></li>
+      <li><a href="#faq"    ocu-scroll-click>FAQ</a></li>
     </ul>
     <div class="mobile-nav-hook" ng-click="nav.show_mobile = !nav.show_mobile">
       <span>&nbsp;</span>
@@ -52,13 +52,13 @@
 <section id="social" class="social-section" ocu-scroll-section>
   <div class="container">
     <h2>#womentechmakers</h2>
-    <div id="tagboard-embed"></div>
+<!--     <div id="tagboard-embed"></div>
     <script>var tagboardOptions = {tagboard:"womentechmakers/154933", fixedHeight: false};</script>
     <script src="https://tagboard.com/public/js/embed.js"></script>
-  </div>
+ -->  </div>
 </section>
 
-<section id="locations" class="location-section" ocu-scroll-section ng-controller="MapCtrl">
+<section id="events" class="events-section" ocu-scroll-section ng-controller="MapCtrl">
   <div class="container">
     <h2>Events</h2>
     <div class="location-map-container">
