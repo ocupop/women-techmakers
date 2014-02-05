@@ -136,33 +136,39 @@ button {
   border-radius: 0; }
 
 /* line 63, sass/_base.sass */
-.button {
+.button, .events-section .location-switch-modes button {
   background-color: #4285f4;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
   border-radius: 6px;
   color: white;
   font-size: 20px;
-  font-weight: bold;
   padding: 12px 24px; }
-  /* line 71, sass/_base.sass */
-  .button.blue, .page-header a {
+  /* line 70, sass/_base.sass */
+  .button.blue, .page-header a, .events-section .location-switch-modes button.blue, .events-section .location-switch-modes button.ui-show {
+    color: white;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF4285F4', endColorstr='#FF4571B4');
-    background-image: -webkit-linear-gradient(-25deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
-    background-image: -moz-linear-gradient(-25deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
-    background-image: -o-linear-gradient(-25deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
-    background-image: linear-gradient(-25deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%); }
-  /* line 78, sass/_base.sass */
-  .button.green {
+    background-image: -webkit-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
+    background-image: -moz-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
+    background-image: -o-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
+    background-image: linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%); }
+  /* line 79, sass/_base.sass */
+  .button.green, .events-section .location-switch-modes button.green {
+    color: white;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF00BFA5', endColorstr='#FF249D89');
-    background-image: -webkit-linear-gradient(-25deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
-    background-image: -moz-linear-gradient(-25deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
-    background-image: -o-linear-gradient(-25deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
-    background-image: linear-gradient(-25deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%); }
+    background-image: -webkit-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
+    background-image: -moz-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
+    background-image: -o-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
+    background-image: linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%); }
+  /* line 88, sass/_base.sass */
+  .button.gray, .events-section .location-switch-modes button {
+    color: #bbbbbb;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEEEEEE', endColorstr='#FFDDDDDD');
+    background-image: -webkit-linear-gradient(-20deg, #eeeeee 0%, #eeeeee 50%, #dddddd 50%, #dddddd 100%);
+    background-image: -moz-linear-gradient(-20deg, #eeeeee 0%, #eeeeee 50%, #dddddd 50%, #dddddd 100%);
+    background-image: -o-linear-gradient(-20deg, #eeeeee 0%, #eeeeee 50%, #dddddd 50%, #dddddd 100%);
+    background-image: linear-gradient(-20deg, #eeeeee 0%, #eeeeee 50%, #dddddd 50%, #dddddd 100%); }
 
 /* line 1, sass/_layers.sass */
 .bg-photo {
@@ -353,26 +359,25 @@ button {
 .events-section .location-switch-modes {
   width: 100%;
   position: absolute;
+  top: 12px;
   z-index: 100;
-  text-align: center;
-  border-top: 4px solid #4571b4; }
+  text-align: center; }
   /* line 24, sass/_events.sass */
   .events-section .location-switch-modes button {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+    cursor: pointer;
     display: inline-block;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    background-color: #1ce9b6;
     height: 36px;
-    padding: 0 24px;
-    margin: 0 -4px; }
+    padding: 0 48px;
+    margin: 0 12px; }
     /* line 35, sass/_events.sass */
     .events-section .location-switch-modes button:focus {
       outline: none; }
     /* line 38, sass/_events.sass */
     .events-section .location-switch-modes button.ui-show {
-      background-color: #4571b4;
       z-index: 10; }
 /* line 42, sass/_events.sass */
 .events-section .event-infobox {

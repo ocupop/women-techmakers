@@ -17,26 +17,26 @@
   .location-switch-modes
     width: 100%
     position: absolute
+    top: $line/2
     z-index: 100
     text-align: center
-    border-top: $border solid $color-darkblue
 
     button
+      @extend .button
+      @extend .button.gray
+      @include box-shadow(rgba(black, .25) 0 0 5px)
+      cursor: pointer
       display: inline-block
       font-size: $line*.75
-      font-weight: bold
-      text-transform: uppercase
-      color: white
-      background-color: $color-lightgreen
       height: $line*1.5
-      padding: 0 $gtr*2
-      margin: 0 0-$border
+      padding: 0 $line*2
+      margin: 0 $line/2
 
       &:focus
         outline: none
 
       &.ui-show
-        background-color: $color-darkblue
+        @extend .button.blue
         z-index: 10
 
   .event-infobox

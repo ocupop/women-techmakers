@@ -62,22 +62,34 @@ button
 
 .button
   background-color: $color-blue
-  @include border-radius($gtr/2)
+  border-radius: $gtr/2
   color: white
   font-size: 20px
-  font-weight: bold
   padding: $line/2 $line
 
   &.blue
+    color: white
+
     // IE6-9 fallback on horizontal gradient
     @include filter-gradient($color-blue, $color-darkblue, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient(-25deg, $color-darkblue 0%, $color-darkblue 50%, $color-blue 50%, $color-blue 100%))
+    @include background-image(linear-gradient(-20deg, $color-darkblue 0%, $color-darkblue 50%, $color-blue 50%, $color-blue 100%))
 
   &.green
+    color: white
+
     // IE6-9 fallback on horizontal gradient
     @include filter-gradient($color-green, $color-darkgreen, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient(-25deg, $color-darkgreen 0%, $color-darkgreen 50%, $color-green 50%, $color-green 100%))
+    @include background-image(linear-gradient(-20deg, $color-darkgreen 0%, $color-darkgreen 50%, $color-green 50%, $color-green 100%))
+
+  &.gray
+    color: #bbb
+
+    // IE6-9 fallback on horizontal gradient
+    @include filter-gradient(#eee, #ddd, horizontal)
+
+    // Two colors, diagonal split
+    @include background-image(linear-gradient(-20deg, #eee 0%, #eee 50%, #ddd 50%, #ddd 100%))
