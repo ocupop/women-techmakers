@@ -1,12 +1,8 @@
 .page-nav
+  color: $color-text
   display: block
-  // position: fixed
-  // top: 0
-  // left: 0
   width: 100%
   z-index: 1000
-  color: $color-text
-  text-transform: uppercase
 
   .nav-container
     min-height: $line * 2
@@ -18,7 +14,7 @@
     +bk(3)
       min-height: 0
       background-color: $color-darkgray
-      height: $line + $font-small
+      height: $line + $font-small + 3px
 
   ul
     display: none
@@ -27,25 +23,67 @@
     padding: 0 $line
 
     +bk(3)
-      +inline-clear
       display: block
-      text-align: justify
+      text-align: center
 
   .ui-show ul
     display: block
 
   li
-    padding: $line/2 0
+    margin: 0 $line
 
     +bk(3)
       display: inline-block
-      font-size: $font-small + 1px
+      font-size: $font-small + 2px
 
   a
     color: white
+    display: inline-block
+    padding: $line/2 $line*.35 $line*.4
 
-  .current-nav-item:before
-    background-color: $color-lightblue
+  a.nav-home:hover,
+  a.nav-home.current-nav-item
+    border-bottom-color: $color-green
+    color: $color-green
+
+  a.nav-about:hover,
+  a.nav-about.current-nav-item
+    border-bottom-color: $color-darkblue
+    color: $color-darkblue
+
+  a.nav-social:hover,
+  a.nav-social.current-nav-item
+    border-bottom-color: $color-lightblue
+    color: $color-lightblue
+
+  a.nav-events:hover,
+  a.nav-events.current-nav-item
+    border-bottom-color: white
+    color: white
+
+  a.nav-faq:hover,
+  a.nav-faq.current-nav-item
+    border-bottom-color: $color-lightgreen
+    color: $color-lightgreen
+
+  a:hover,
+  .current-nav-item
+    border-bottom-width: 3px
+    border-bottom-style: solid
+
+
+// Sticky nav.
+
+.page-nav.fixed
+  position: fixed
+  top: 0
+  left: 0
+
+.page-header.fixed-nav-compensation
+  margin-bottom: 40px
+
+
+// Hamburger navigation for mobile.
 
 .mobile-nav-hook
   +absolute(bottom, right)

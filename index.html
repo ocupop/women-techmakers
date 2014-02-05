@@ -17,7 +17,7 @@
 
 <body>
 
-<header class="page-header">
+<header class="page-header" id="home">
   <div class="pattern-header"></div>
 
   <div class="container">
@@ -32,10 +32,11 @@
 <nav class="page-nav" ng-controller="NavCtrl">
   <div class="nav-container" ui-show="nav.show_mobile">
     <ul>
-      <li><a href="#home"   ocu-scroll-click class="current-nav-item">Home</a></li>
-      <li><a href="#social" ocu-scroll-click>#womentechmakers</a></li>
-      <li><a href="#events" ocu-scroll-click>Events</a></li>
-      <li><a href="#faq"    ocu-scroll-click>FAQ</a></li>
+      <li><a href="#home"   ocu-scroll-click class="nav-home current-nav-item">Home</a></li>
+      <li><a href="#about"  ocu-scroll-click class="nav-about">About</a></li>
+      <li><a href="#social" ocu-scroll-click class="nav-social">#womentechmakers</a></li>
+      <li><a href="#events" ocu-scroll-click class="nav-events">Events</a></li>
+      <li><a href="#faq"    ocu-scroll-click class="nav-faq">FAQ</a></li>
     </ul>
     <div class="mobile-nav-hook" ng-click="nav.show_mobile = !nav.show_mobile">
       <span>&nbsp;</span>

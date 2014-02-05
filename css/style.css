@@ -330,59 +330,92 @@ button {
       margin-top: 4.8px; } }
 /* line 1, sass/_nav.sass */
 .page-nav {
+  color: #7a7a7a;
   display: block;
   width: 100%;
-  z-index: 1000;
-  color: #7a7a7a;
-  text-transform: uppercase; }
-  /* line 11, sass/_nav.sass */
+  z-index: 1000; }
+  /* line 7, sass/_nav.sass */
   .page-nav .nav-container {
     min-height: 48px;
     margin: 0 auto; }
-    /* line 15, sass/_nav.sass */
+    /* line 11, sass/_nav.sass */
     .page-nav .nav-container.ui-show {
       background-color: #1a1a1a; }
     @media (min-width: 960px) {
-      /* line 11, sass/_nav.sass */
+      /* line 7, sass/_nav.sass */
       .page-nav .nav-container {
         min-height: 0;
         background-color: #1a1a1a;
-        height: 37px; } }
-  /* line 23, sass/_nav.sass */
+        height: 40px; } }
+  /* line 19, sass/_nav.sass */
   .page-nav ul {
     display: none;
     margin: 0 auto;
     width: 960px;
     padding: 0 24px; }
     @media (min-width: 960px) {
-      /* line 23, sass/_nav.sass */
+      /* line 19, sass/_nav.sass */
       .page-nav ul {
         display: block;
-        text-align: justify; }
-        /* line 61, sass/_mixin.sass */
-        .page-nav ul:after {
-          content: "";
-          display: inline-block;
-          width: 100%; } }
-  /* line 34, sass/_nav.sass */
+        text-align: center; } }
+  /* line 29, sass/_nav.sass */
   .page-nav .ui-show ul {
     display: block; }
-  /* line 37, sass/_nav.sass */
+  /* line 32, sass/_nav.sass */
   .page-nav li {
-    padding: 12px 0; }
+    margin: 0 24px; }
     @media (min-width: 960px) {
-      /* line 37, sass/_nav.sass */
+      /* line 32, sass/_nav.sass */
       .page-nav li {
         display: inline-block;
-        font-size: 14px; } }
-  /* line 44, sass/_nav.sass */
+        font-size: 15px; } }
+  /* line 39, sass/_nav.sass */
   .page-nav a {
+    color: white;
+    display: inline-block;
+    padding: 12px 8.4px 9.6px; }
+  /* line 44, sass/_nav.sass */
+  .page-nav a.nav-home:hover,
+  .page-nav a.nav-home.current-nav-item {
+    border-bottom-color: #00bfa5;
+    color: #00bfa5; }
+  /* line 49, sass/_nav.sass */
+  .page-nav a.nav-about:hover,
+  .page-nav a.nav-about.current-nav-item {
+    border-bottom-color: #4571b4;
+    color: #4571b4; }
+  /* line 54, sass/_nav.sass */
+  .page-nav a.nav-social:hover,
+  .page-nav a.nav-social.current-nav-item {
+    border-bottom-color: #4fc3f7;
+    color: #4fc3f7; }
+  /* line 59, sass/_nav.sass */
+  .page-nav a.nav-events:hover,
+  .page-nav a.nav-events.current-nav-item {
+    border-bottom-color: white;
     color: white; }
-  /* line 47, sass/_nav.sass */
-  .page-nav .current-nav-item:before {
-    background-color: #4fc3f7; }
+  /* line 64, sass/_nav.sass */
+  .page-nav a.nav-faq:hover,
+  .page-nav a.nav-faq.current-nav-item {
+    border-bottom-color: #1ce9b6;
+    color: #1ce9b6; }
+  /* line 69, sass/_nav.sass */
+  .page-nav a:hover,
+  .page-nav .current-nav-item {
+    border-bottom-width: 3px;
+    border-bottom-style: solid; }
 
-/* line 50, sass/_nav.sass */
+/* line 77, sass/_nav.sass */
+.page-nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+/* line 82, sass/_nav.sass */
+.page-header.fixed-nav-compensation {
+  margin-bottom: 40px; }
+
+/* line 88, sass/_nav.sass */
 .mobile-nav-hook {
   position: absolute;
   bottom: 0;
@@ -393,7 +426,7 @@ button {
   margin: 12px 24px;
   width: 24px;
   height: 24px; }
-  /* line 57, sass/_nav.sass */
+  /* line 95, sass/_nav.sass */
   .mobile-nav-hook span,
   .mobile-nav-hook span:before,
   .mobile-nav-hook span:after {
@@ -405,14 +438,14 @@ button {
     height: 4px;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.5); }
-  /* line 69, sass/_nav.sass */
+  /* line 107, sass/_nav.sass */
   .mobile-nav-hook span:before {
     top: 8px; }
-  /* line 72, sass/_nav.sass */
+  /* line 110, sass/_nav.sass */
   .mobile-nav-hook span:after {
     top: 16px; }
   @media (min-width: 960px) {
-    /* line 50, sass/_nav.sass */
+    /* line 88, sass/_nav.sass */
     .mobile-nav-hook {
       display: none; } }
 

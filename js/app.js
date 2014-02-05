@@ -101,6 +101,27 @@
     };
   });
 
+  // Sticky navigation.
+  APP.run(function($rootScope, $timeout) {
+    var $nav, $nav_top, $header, $window, pos;
+    pos = 1;
+    $window = $(window);
+    $nav = $('.page-nav');
+    $nav_top = $('.page-nav').offset().top;
+    $header = $('.page-header');
+    $window.on("scroll", function() {
+      pos = $window.scrollTop();
+      if (pos >= $nav_top) {
+        $nav.addClass('fixed');
+        $header.addClass('fixed-nav-compensation');
+      } else {
+        $nav.removeClass('fixed');
+        $header.removeClass('fixed-nav-compensation');
+      }
+    });
+  });
+
+  // Parallax.
   APP.run(function($rootScope, $timeout) {
     var $bg_photo, $header, $pattern_header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
     pos = 1;
@@ -125,7 +146,7 @@
       $pattern_right.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $pattern_left.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $bg_photo.css(transform, "translate3d(0, " + (pos * 0.3) + "px, 0)");
-      $header.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
+      $header.css(transform, "translate3d(0, " + (pos * -0.3) + "px, 0)");
       return requestAnimationFrame(draw_background);
     };
     if (Modernizr.csstransforms3d && !Modernizr.touch) {
