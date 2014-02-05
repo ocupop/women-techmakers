@@ -195,7 +195,7 @@ button {
   @media screen and (max-width: 640px) {
     /* line 1, sass/_layers.sass */
     .bg-photo {
-      background-image: url('../img/header-small.jpg?1391578319'); } }
+      background-image: url('../img/header-small.jpg?1391580373'); } }
 
 /* line 7, sass/_layers.sass */
 .pattern-header {
@@ -266,67 +266,66 @@ button {
     height: 76px; }
 
 /* line 42, sass/_header.sass */
-.page-header,
-.bg-photo {
+.page-header {
   height: 800px; }
 
-/* line 46, sass/_header.sass */
+/* line 45, sass/_header.sass */
 .bg-photo {
   height: 850px; }
 
-/* line 49, sass/_header.sass */
+/* line 48, sass/_header.sass */
 .page-header {
   padding-top: 144px; }
-  /* line 52, sass/_header.sass */
+  /* line 51, sass/_header.sass */
   .page-header .events-jumper {
     margin-top: 144px; }
 
 @media screen and (max-width: 1600px) {
-  /* line 57, sass/_header.sass */
-  .page-header,
-  .bg-photo {
+  /* line 56, sass/_header.sass */
+  .page-header {
     height: 550px; }
 
-  /* line 61, sass/_header.sass */
+  /* line 59, sass/_header.sass */
   .bg-photo {
     height: 600px; }
 
-  /* line 64, sass/_header.sass */
+  /* line 62, sass/_header.sass */
   .page-header {
     padding-top: 96px; }
-    /* line 67, sass/_header.sass */
+    /* line 65, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 96px; } }
 @media screen and (max-width: 1024px) {
-  /* line 72, sass/_header.sass */
-  .page-header,
-  .bg-photo {
+  /* line 70, sass/_header.sass */
+  .page-header {
     height: 350px; }
 
-  /* line 76, sass/_header.sass */
+  /* line 73, sass/_header.sass */
   .bg-photo {
     height: 400px; }
 
-  /* line 79, sass/_header.sass */
+  /* line 76, sass/_header.sass */
   .page-header {
     padding-top: 48px; }
-    /* line 82, sass/_header.sass */
+    /* line 79, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 6px; } }
 @media screen and (max-width: 640px) {
-  /* line 87, sass/_header.sass */
-  .page-header,
-  .bg-photo {
+  /* line 84, sass/_header.sass */
+  .page-header {
     height: 250px; }
 
-  /* line 91, sass/_header.sass */
+  /* line 87, sass/_header.sass */
   .bg-photo {
     height: 300px; }
 
-  /* line 94, sass/_header.sass */
+  /* line 90, sass/_header.sass */
   .page-header {
     padding-top: 12px; }
-    /* line 97, sass/_header.sass */
+    /* line 93, sass/_header.sass */
+    .page-header h2 {
+      font-size: 20px; }
+    /* line 96, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 4.8px; } }
 /* line 1, sass/_nav.sass */

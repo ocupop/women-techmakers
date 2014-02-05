@@ -121,7 +121,7 @@
       var scale;
       pos = $window.scrollTop();
       scale = Math.max(0, ((height * 0.5) - pos) / (height * 0.5));
-      $pattern_header.css(transform, "translate3d(0, " + (pos * 0.7) + "px, 0)");
+      $pattern_header.css(transform, "translate3d(0, " + (pos * 0.5) + "px, 0)");
       $pattern_right.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $pattern_left.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $bg_photo.css(transform, "translate3d(0, " + (pos * 0.3) + "px, 0)");
