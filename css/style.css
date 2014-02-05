@@ -173,7 +173,7 @@ button {
 
 /* line 1, sass/_layers.sass */
 .bg-photo {
-  background-image: url('../img/header.jpg?1391577703');
+  background-image: url('../img/header-1.jpg?1391628845');
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -187,15 +187,15 @@ button {
     /* line 1, sass/_layers.sass */
     .bg-photo {
       background-size: auto;
-      background-image: url('../img/header-large.jpg?1391578139'); } }
+      background-image: url('../img/header-1-large.jpg?1391628907'); } }
   @media screen and (max-width: 1024px) {
     /* line 1, sass/_layers.sass */
     .bg-photo {
-      background-image: url('../img/header-medium.jpg?1391578182'); } }
+      background-image: url('../img/header-1-medium.jpg?1391628942'); } }
   @media screen and (max-width: 640px) {
     /* line 1, sass/_layers.sass */
     .bg-photo {
-      background-image: url('../img/header-small.jpg?1391580373'); } }
+      background-image: url('../img/header-1-small.jpg?1391628988'); } }
 
 /* line 7, sass/_layers.sass */
 .pattern-header {
