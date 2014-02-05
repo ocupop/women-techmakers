@@ -66,61 +66,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 5, sass/_base.sass */
 html {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: #7a7a7a;
   background-color: white;
-  padding-bottom: 100px; }
+  color: #7a7a7a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
-/* line 12, sass/_base.sass */
+/* line 11, sass/_base.sass */
 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 16, sass/_base.sass */
+/* line 15, sass/_base.sass */
 .container {
   padding: 0 24px;
   max-width: 960px;
   margin: 0 auto; }
   @media (min-width: 960px) {
-    /* line 16, sass/_base.sass */
+    /* line 15, sass/_base.sass */
     .container {
       padding: 0 12px; } }
 
-/* line 23, sass/_base.sass */
+/* line 22, sass/_base.sass */
 p {
   font-size: 16px;
   line-height: 28px;
   padding-bottom: 24px; }
-  /* line 28, sass/_base.sass */
+  /* line 27, sass/_base.sass */
   p a {
     text-decoration: underline; }
 
-/* line 31, sass/_base.sass */
+/* line 30, sass/_base.sass */
 strong {
   font-weight: bold; }
 
-/* line 34, sass/_base.sass */
+/* line 33, sass/_base.sass */
 h2,
 h3 {
   padding-bottom: 24px; }
 
-/* line 38, sass/_base.sass */
+/* line 37, sass/_base.sass */
 h2 {
   font-size: 24px;
   line-height: 28.8px;
   text-align: center; }
   @media (min-width: 640px) {
-    /* line 38, sass/_base.sass */
+    /* line 37, sass/_base.sass */
     h2 {
       font-size: 31.2px;
       line-height: 36px; } }
 
-/* line 47, sass/_base.sass */
+/* line 46, sass/_base.sass */
 h3 {
   font-size: 24px; }
 
-/* line 50, sass/_base.sass */
+/* line 49, sass/_base.sass */
 section {
   z-index: 10;
   margin: 0;
@@ -128,7 +127,7 @@ section {
   overflow: hidden;
   position: relative; }
 
-/* line 57, sass/_base.sass */
+/* line 56, sass/_base.sass */
 input,
 button {
   -webkit-appearance: none;
@@ -137,15 +136,15 @@ button {
   font-family: inherit;
   border-radius: 0; }
 
-/* line 65, sass/_base.sass */
+/* line 64, sass/_base.sass */
 .button, .events-section .location-switch-modes button {
   background-color: #4285f4;
   border-radius: 6px;
   color: white;
   font-size: 20px;
   padding: 12px 24px; }
-  /* line 72, sass/_base.sass */
-  .button.blue, .page-header a, .events-section .location-switch-modes button.blue, .events-section .location-switch-modes button.ui-show {
+  /* line 71, sass/_base.sass */
+  .button.blue, .events-section .location-switch-modes button.blue, .events-section .location-switch-modes button.ui-show {
     color: white;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF4285F4', endColorstr='#FF4571B4');
@@ -153,7 +152,7 @@ button {
     background-image: -moz-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
     background-image: -o-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
     background-image: linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%); }
-  /* line 81, sass/_base.sass */
+  /* line 80, sass/_base.sass */
   .button.green, .events-section .location-switch-modes button.green {
     color: white;
     *zoom: 1;
@@ -162,7 +161,7 @@ button {
     background-image: -moz-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
     background-image: -o-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
     background-image: linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%); }
-  /* line 90, sass/_base.sass */
+  /* line 89, sass/_base.sass */
   .button.gray, .events-section .location-switch-modes button {
     color: #bbbbbb;
     *zoom: 1;
@@ -232,13 +231,18 @@ button {
     max-width: 627px; }
   /* line 14, sass/_header.sass */
   .page-header h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-style: italic;
     margin-top: 18px; }
   /* line 19, sass/_header.sass */
   .page-header a {
+    background: url('../img/find-events-button.png?1391562680') top no-repeat;
+    background-size: 193px;
     display: inline-block;
-    margin-top: 18px; }
+    margin-top: 6px;
+    padding-top: 19.2px;
+    width: 193px;
+    height: 76px; }
 
 /* line 1, sass/_nav.sass */
 .page-nav {
