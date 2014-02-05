@@ -198,90 +198,137 @@ button {
       background-image: url('../img/header-small.jpg?1391578319'); } }
 
 /* line 7, sass/_layers.sass */
+.pattern-header {
+  background: url('../img/pattern-header.png?1391579170') right no-repeat;
+  background-size: 422px;
+  width: 422px;
+  height: 620px;
+  position: absolute;
+  top: -5%;
+  right: -10%; }
+
+/* line 16, sass/_layers.sass */
 .pattern-left-layer,
 .pattern-right-layer {
   width: 200px;
   height: 600px;
   position: absolute; }
 
-/* line 13, sass/_layers.sass */
+/* line 22, sass/_layers.sass */
 .pattern-left-layer {
   background: url('../img/pattern-left.png?1391557851') left no-repeat;
   background-size: 180px;
   left: 0;
   bottom: -625%; }
 
-/* line 19, sass/_layers.sass */
+/* line 28, sass/_layers.sass */
 .pattern-right-layer {
   background: url('../img/pattern-right.png?1391557830') right no-repeat;
   background-size: 167px;
   right: 0;
   top: 50%; }
 
+@media screen and (min-width: 1600px) {
+  /* line 36, sass/_layers.sass */
+  .pattern-header {
+    display: none; } }
+@media screen and (max-width: 640px) {
+  /* line 41, sass/_layers.sass */
+  .pattern-header,
+  .pattern-left-layer,
+  .pattern-right-layer {
+    display: none; } }
 /* line 1, sass/_header.sass */
 .page-header {
   z-index: 10;
-  padding: 48px 0 0;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   /* line 8, sass/_header.sass */
   .page-header h1.site-title img {
-    margin-right: 33.6px;
     width: 100%;
     max-width: 627px; }
-  /* line 13, sass/_header.sass */
+  /* line 12, sass/_header.sass */
   .page-header h2 {
     color: white;
     font-size: 30px;
     font-style: italic;
     margin-top: 18px; }
-  /* line 19, sass/_header.sass */
-  .page-header a {
+  /* line 18, sass/_header.sass */
+  .page-header .events-jumper {
     background: url('../img/find-events-button.png?1391562680') top no-repeat;
     background-size: 193px;
+    color: white;
     display: inline-block;
     font-size: 18px;
-    margin-top: 6px;
     padding: 19.2px 0 0 0;
     width: 193px;
     height: 76px; }
 
-/* line 43, sass/_header.sass */
+/* line 42, sass/_header.sass */
 .page-header,
 .bg-photo {
   height: 800px; }
 
-/* line 47, sass/_header.sass */
+/* line 46, sass/_header.sass */
 .bg-photo {
   height: 850px; }
 
-@media screen and (max-width: 1600px) {
+/* line 49, sass/_header.sass */
+.page-header {
+  padding-top: 144px; }
   /* line 52, sass/_header.sass */
+  .page-header .events-jumper {
+    margin-top: 144px; }
+
+@media screen and (max-width: 1600px) {
+  /* line 57, sass/_header.sass */
   .page-header,
   .bg-photo {
     height: 550px; }
 
-  /* line 56, sass/_header.sass */
-  .bg-photo {
-    height: 600px; } }
-@media screen and (max-width: 1024px) {
   /* line 61, sass/_header.sass */
+  .bg-photo {
+    height: 600px; }
+
+  /* line 64, sass/_header.sass */
+  .page-header {
+    padding-top: 96px; }
+    /* line 67, sass/_header.sass */
+    .page-header .events-jumper {
+      margin-top: 96px; } }
+@media screen and (max-width: 1024px) {
+  /* line 72, sass/_header.sass */
   .page-header,
   .bg-photo {
     height: 350px; }
 
-  /* line 65, sass/_header.sass */
+  /* line 76, sass/_header.sass */
   .bg-photo {
-    height: 400px; } }
+    height: 400px; }
+
+  /* line 79, sass/_header.sass */
+  .page-header {
+    padding-top: 48px; }
+    /* line 82, sass/_header.sass */
+    .page-header .events-jumper {
+      margin-top: 6px; } }
 @media screen and (max-width: 640px) {
-  /* line 70, sass/_header.sass */
+  /* line 87, sass/_header.sass */
   .page-header,
   .bg-photo {
     height: 250px; }
 
-  /* line 74, sass/_header.sass */
+  /* line 91, sass/_header.sass */
   .bg-photo {
-    height: 300px; } }
+    height: 300px; }
+
+  /* line 94, sass/_header.sass */
+  .page-header {
+    padding-top: 12px; }
+    /* line 97, sass/_header.sass */
+    .page-header .events-jumper {
+      margin-top: 4.8px; } }
 /* line 1, sass/_nav.sass */
 .page-nav {
   display: block;
@@ -378,11 +425,14 @@ button {
 /* line 1, sass/_social.sass */
 .social-section {
   background: #4fc3f7;
-  color: white; }
-  /* line 5, sass/_social.sass */
+  color: white;
+  z-index: 12; }
+  /* line 6, sass/_social.sass */
   .social-section h2 {
     margin-bottom: -84px; }
 
+@media screen and (max-width: 640px) {
+  display: none; }
 /* line 2, sass/_events.sass */
 .events-section .map-canvas {
   margin-bottom: 24px;

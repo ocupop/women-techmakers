@@ -4,6 +4,15 @@
   width: 100%
   height: $line*18
 
+.pattern-header
+  background: image-url("pattern-header.png") right no-repeat
+  background-size: 422px
+  width: 422px
+  height: 620px
+  position: absolute
+  top: -5%
+  right: -10%
+
 .pattern-left-layer,
 .pattern-right-layer
   width: 200px
@@ -21,3 +30,15 @@
   background-size: 167px
   right: 0
   top: 50%
+
+// Don't show header pattern on huge screens, it's too small proportionally.
+@media screen and (min-width: 1600px)
+  .pattern-header
+    display: none
+
+// Don't show these on small screens.
+@media screen and (max-width: 640px)
+  .pattern-header,
+  .pattern-left-layer,
+  .pattern-right-layer
+    display: none

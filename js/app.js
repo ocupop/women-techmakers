@@ -102,12 +102,13 @@
   });
 
   APP.run(function($rootScope, $timeout) {
-    var $bg_photo, $header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
+    var $bg_photo, $header, $pattern_header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
     pos = 1;
     $rootScope.scroll_pos = pos;
     $window = $(window);
     $bg_photo = $('.bg-photo');
-    $header = $('.page-header');
+    $header = $('.page-header .container');
+    $pattern_header = $('.pattern-header');
     $pattern_right = $('.pattern-right-layer');
     $pattern_left = $('.pattern-left-layer');
     transform = Modernizr.prefixed('transform');
@@ -120,6 +121,7 @@
       var scale;
       pos = $window.scrollTop();
       scale = Math.max(0, ((height * 0.5) - pos) / (height * 0.5));
+      $pattern_header.css(transform, "translate3d(0, " + (pos * 0.7) + "px, 0)");
       $pattern_right.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $pattern_left.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $bg_photo.css(transform, "translate3d(0, " + (pos * 0.3) + "px, 0)");
