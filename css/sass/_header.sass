@@ -3,7 +3,6 @@
   padding: $line*2 0 0
   text-align: center
   width: 100%
-  height: $line*18
 
   h1.site-title
     img
@@ -12,6 +11,7 @@
       max-width: 627px
 
   h2
+    color: white
     font-size: 30px
     font-style: italic
     margin-top: $line*.75
@@ -25,3 +25,51 @@
     padding: $line*.8 0 0 0
     width: 193px
     height: 76px
+
+
+// Header heights.
+$header-huge: 800px
+$header-large: 550px
+$header-medium: 350px
+$header-small: 250px
+
+// Images should be cropped as follows:
+// Huge:   2500 x 850
+// Large:  1600 x 600
+// Medium: 1030 x 400
+// Small:   640 x 280
+
+// Huge displays; HDTV etc.
+.page-header,
+.bg-photo
+  height: $header-huge
+
+.bg-photo
+  height: $header-huge + 50px
+
+// Large displays; most displays.
+@media screen and (max-width: 1600px)
+  .page-header,
+  .bg-photo
+    height: $header-large
+
+  .bg-photo
+    height: $header-large + 50px
+
+// Small displays; largest image that iOS can load into single memory buffer.
+@media screen and (max-width: 1024px)
+  .page-header,
+  .bg-photo
+    height: $header-medium
+
+  .bg-photo
+    height: $header-medium + 50px
+
+// Phablets.
+@media screen and (max-width: 640px)
+  .page-header,
+  .bg-photo
+    height: $header-small
+
+  .bg-photo
+    height: $header-small + 50px
