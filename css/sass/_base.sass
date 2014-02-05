@@ -74,19 +74,19 @@ button
     color: white
 
     // IE6-9 fallback on horizontal gradient
-    @include filter-gradient($color-blue, $color-darkblue, horizontal)
+    @include filter-gradient($color-blue, $color-blue, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient($gradient-angle, $color-darkblue 0%, $color-darkblue 50%, $color-blue 50%, $color-blue 100%))
+    @include background-image(linear-gradient($gradient-angle, $color-blue*.8 0%, $color-blue*.8 50%, $color-blue 50%, $color-blue 100%))
 
   &.green
     color: white
 
     // IE6-9 fallback on horizontal gradient
-    @include filter-gradient($color-green, $color-darkgreen, horizontal)
+    @include filter-gradient($color-green, $color-green, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient($gradient-angle, $color-darkgreen 0%, $color-darkgreen 50%, $color-green 50%, $color-green 100%))
+    @include background-image(linear-gradient($gradient-angle, $color-green*.8 0%, $color-green*.8 50%, $color-green 50%, $color-green 100%))
 
   &.gray
     color: #bbb
@@ -95,4 +95,4 @@ button
     @include filter-gradient(#eee, #ddd, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient($gradient-angle, #eee 0%, #eee 50%, #ddd 50%, #ddd 100%))
+    @include background-image(linear-gradient($gradient-angle, #ddd*.95 0%, #ddd*.95 50%, #ddd 50%, #ddd 100%))
