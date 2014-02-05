@@ -25,6 +25,16 @@
     width: 193px
     height: 76px
 
+  $google-logo-size: 75px
+
+  .google-logo
+    position: fixed
+    left: 50%
+    // position from top is determined by height of header; see responsive rules below
+    margin-left: -($container/2 - $google-logo-size/6)
+    width: $google-logo-size
+    opacity: .5
+
 
 // Header heights.
 $header-huge: 800px
@@ -42,6 +52,9 @@ $header-small: 250px
 .page-header
   height: $header-huge
 
+.google-logo
+  top: $header-huge - 35px
+
 .bg-photo
   height: $header-huge+50px
 
@@ -55,6 +68,9 @@ $header-small: 250px
 @media screen and (max-width: 1600px)
   .page-header
     height: $header-large
+
+  .google-logo
+    top: $header-large - 35px
 
   .bg-photo
     height: $header-large+50px
@@ -70,6 +86,9 @@ $header-small: 250px
   .page-header
     height: $header-medium
 
+  .google-logo
+    top: $header-medium - 35px
+
   .bg-photo
     height: $header-medium+50px
 
@@ -83,6 +102,9 @@ $header-small: 250px
 @media screen and (max-width: 640px)
   .page-header
     height: $header-small
+
+  .google-logo
+    top: $header-small - 35px
 
   .bg-photo
     height: $header-small+50px
