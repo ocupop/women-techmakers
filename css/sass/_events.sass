@@ -155,3 +155,11 @@
       .top-border,
       .bottom-border
         opacity: 1
+
+// Make map switch buttons smaller on mobile.
+@media screen and (max-width: 800px)
+  .events-section .location-switch-modes button
+    font-size: $font-small
+    height: $line*1.2
+    padding: 0 $line*.8
+    margin: 0 $line/3

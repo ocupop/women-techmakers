@@ -659,6 +659,13 @@ button {
     .csstransforms .location-section .event-wrapper.ui-show .top-border,
     .csstransforms .location-section .event-wrapper.ui-show .bottom-border {
       opacity: 1; } }
+@media screen and (max-width: 800px) {
+  /* line 161, sass/_events.sass */
+  .events-section .location-switch-modes button {
+    font-size: 13px;
+    height: 28.8px;
+    padding: 0 19.2px;
+    margin: 0 8px; } }
 /* line 1, sass/_faq.sass */
 .faq-section {
   background: #1ce9b6;
