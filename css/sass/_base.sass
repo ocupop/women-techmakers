@@ -74,10 +74,10 @@ button
     color: white
 
     // IE6-9 fallback on horizontal gradient
-    @include filter-gradient($color-blue, $color-blue, horizontal)
+    @include filter-gradient($color-lightblue, $color-lightblue, horizontal)
 
     // Two colors, diagonal split
-    @include background-image(linear-gradient($gradient-angle, $color-blue*.8 0%, $color-blue*.8 50%, $color-blue 50%, $color-blue 100%))
+    @include background-image(linear-gradient($gradient-angle, $color-lightblue*.9 0%, $color-lightblue*.9 50%, $color-lightblue 50%, $color-lightblue 100%))
 
   &.green
     color: white
