@@ -201,7 +201,7 @@ button {
   background: url('../img/pattern-left.png?1391557851') left no-repeat;
   background-size: 180px;
   left: 0;
-  top: 600%; }
+  bottom: -700%; }
 
 /* line 19, sass/_layers.sass */
 .pattern-right-layer {
@@ -245,12 +245,12 @@ button {
     margin: 0 auto; }
     /* line 15, sass/_nav.sass */
     .page-nav .nav-container.ui-show {
-      background-color: #333333; }
+      background-color: #1a1a1a; }
     @media (min-width: 960px) {
       /* line 11, sass/_nav.sass */
       .page-nav .nav-container {
         min-height: 0;
-        background-color: #333333;
+        background-color: #1a1a1a;
         height: 37px; } }
   /* line 23, sass/_nav.sass */
   .page-nav ul {
