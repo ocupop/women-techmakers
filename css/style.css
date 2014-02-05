@@ -400,8 +400,8 @@ button {
   /* line 44, sass/_nav.sass */
   .page-nav a.nav-home:hover,
   .page-nav a.nav-home.current-nav-item {
-    border-bottom-color: #00bfa5;
-    color: #00bfa5; }
+    border-bottom-color: #1ce9b6;
+    color: #1ce9b6; }
   /* line 49, sass/_nav.sass */
   .page-nav a.nav-about:hover,
   .page-nav a.nav-about.current-nav-item {
@@ -420,8 +420,8 @@ button {
   /* line 64, sass/_nav.sass */
   .page-nav a.nav-faq:hover,
   .page-nav a.nav-faq.current-nav-item {
-    border-bottom-color: #1ce9b6;
-    color: #1ce9b6; }
+    border-bottom-color: #00bfa5;
+    color: #00bfa5; }
   /* line 69, sass/_nav.sass */
   .page-nav a:hover,
   .page-nav .current-nav-item {
@@ -691,5 +691,9 @@ button {
     margin: 0 8px; } }
 /* line 1, sass/_faq.sass */
 .faq-section {
-  background: #1ce9b6;
+  background: #00bfa5;
   color: white; }
+  /* line 5, sass/_faq.sass */
+  .faq-section h3 {
+    padding-top: 24px;
+    padding-bottom: 12px; }
