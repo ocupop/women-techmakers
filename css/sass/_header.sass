@@ -10,7 +10,6 @@
       max-width: 627px
 
   h2
-    color: white
     font-size: 30px
     font-style: italic
     margin-top: $line*.75
@@ -25,15 +24,28 @@
     width: 193px
     height: 76px
 
-  $google-logo-size: 75px
-
   .google-logo
     position: fixed
     left: 50%
     // position from top is determined by height of header; see responsive rules below
-    margin-left: -($container/2 - $google-logo-size/6)
-    width: $google-logo-size
-    opacity: .5
+    margin-left: -($container/2 - 12px)
+    width: 75px
+
+  // Dark and light header images.
+
+  &.dark
+    h2
+      color: white
+
+    .google-logo
+      opacity: .5
+
+  &.light
+    h2
+      color: $color-gray
+
+    .google-logo
+      opacity: 1
 
 
 // Header heights.
