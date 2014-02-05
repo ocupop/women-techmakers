@@ -104,15 +104,14 @@
   });
 
   APP.run(function($rootScope, $timeout) {
-    var $earth, $header, $milky_way, $sky, $stars, $window, draw_background, height, pos, transform;
+    var $bg_photo, $header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
     pos = 1;
     $rootScope.scroll_pos = pos;
     $window = $(window);
-    $sky = $('.sky-layer');
-    $earth = $('.earth-layer');
-    $milky_way = $('.milky-way-layer');
-    $stars = $('.stars-layer');
+    $bg_photo = $('.bg-photo');
     $header = $('.page-header');
+    $pattern_right = $('.pattern-right-layer');
+    $pattern_left = $('.pattern-left-layer');
     transform = Modernizr.prefixed('transform');
     height = $window.height();
     $window.on("scroll", function() {
@@ -122,13 +121,10 @@
     draw_background = function() {
       var scale;
       pos = $window.scrollTop();
-      $sky.css({
-        opacity: ((height * 2) - pos) / (height * 2) - 0.2
-      });
       scale = Math.max(0, ((height * 0.5) - pos) / (height * 0.5));
-      $earth.css(transform, "translate3d(0, " + ((pos * 1.1) + height / 2) + "px, 0) scale3d(" + scale + "," + scale + ",1 )");
-      $milky_way.css(transform, "translate3d(0, " + (pos * 1.05) + "px, 0)");
-      $stars.css(transform, "translate3d(0, " + (pos * 1.02) + "px, 0)");
+      $pattern_right.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
+      $pattern_left.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
+      $bg_photo.css(transform, "translate3d(0, " + (pos * 0.3) + "px, 0)");
       $header.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       return requestAnimationFrame(draw_background);
     };

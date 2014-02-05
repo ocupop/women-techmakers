@@ -2,12 +2,22 @@
   +multi-background("header")
   +absolute(0, 0)
   width: 100%
-  height: 100%
+  height: $line*18
+
+.pattern-left-layer,
+.pattern-right-layer
+  width: 200px
+  height: 600px
+  position: absolute
 
 .pattern-left-layer
-  background: image-url("pattern-left.png") right no-repeat
+  background: image-url("pattern-left.png") left no-repeat
   background-size: 180px
+  left: 0
+  top: 600%
 
 .pattern-right-layer
   background: image-url("pattern-right.png") right no-repeat
   background-size: 167px
+  right: 0
+  top: 50%
