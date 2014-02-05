@@ -219,7 +219,7 @@ button {
   background: url('../img/pattern-left.png?1391557851') left no-repeat;
   background-size: 180px;
   left: 0;
-  bottom: -625%; }
+  bottom: -200%; }
 
 /* line 28, sass/_layers.sass */
 .pattern-right-layer {
