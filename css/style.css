@@ -124,9 +124,11 @@ h3 {
 section {
   z-index: 10;
   margin: 0;
-  padding: 48px 0 24px; }
+  padding: 48px 0 24px;
+  overflow: hidden;
+  position: relative; }
 
-/* line 55, sass/_base.sass */
+/* line 57, sass/_base.sass */
 input,
 button {
   -webkit-appearance: none;
@@ -135,14 +137,14 @@ button {
   font-family: inherit;
   border-radius: 0; }
 
-/* line 63, sass/_base.sass */
+/* line 65, sass/_base.sass */
 .button, .events-section .location-switch-modes button {
   background-color: #4285f4;
   border-radius: 6px;
   color: white;
   font-size: 20px;
   padding: 12px 24px; }
-  /* line 70, sass/_base.sass */
+  /* line 72, sass/_base.sass */
   .button.blue, .page-header a, .events-section .location-switch-modes button.blue, .events-section .location-switch-modes button.ui-show {
     color: white;
     *zoom: 1;
@@ -151,7 +153,7 @@ button {
     background-image: -moz-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
     background-image: -o-linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%);
     background-image: linear-gradient(-20deg, #4571b4 0%, #4571b4 50%, #4285f4 50%, #4285f4 100%); }
-  /* line 79, sass/_base.sass */
+  /* line 81, sass/_base.sass */
   .button.green, .events-section .location-switch-modes button.green {
     color: white;
     *zoom: 1;
@@ -160,7 +162,7 @@ button {
     background-image: -moz-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
     background-image: -o-linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%);
     background-image: linear-gradient(-20deg, #249d89 0%, #249d89 50%, #00bfa5 50%, #00bfa5 100%); }
-  /* line 88, sass/_base.sass */
+  /* line 90, sass/_base.sass */
   .button.gray, .events-section .location-switch-modes button {
     color: #bbbbbb;
     *zoom: 1;
@@ -207,7 +209,7 @@ button {
   background: url('../img/pattern-left.png?1391557851') left no-repeat;
   background-size: 180px;
   left: 0;
-  bottom: -700%; }
+  bottom: -625%; }
 
 /* line 19, sass/_layers.sass */
 .pattern-right-layer {
