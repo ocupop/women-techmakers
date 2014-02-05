@@ -2,8 +2,6 @@
 
 The website for Google’s **Women Techmakers** conferences.
 
-#butts
-
 
 ## Project Notes
 
