@@ -297,83 +297,73 @@ button {
 
 /* line 73, sass/_header.sass */
 .page-header {
-  height: 800px; }
+  height: 800px;
+  padding-top: 144px; }
+  /* line 77, sass/_header.sass */
+  .page-header .events-jumper {
+    margin-top: 144px; }
+  /* line 80, sass/_header.sass */
+  .page-header .google-logo {
+    top: 765px; }
 
-/* line 76, sass/_header.sass */
-.google-logo {
-  top: 765px; }
-
-/* line 79, sass/_header.sass */
+/* line 83, sass/_header.sass */
 .bg-photo {
   height: 850px; }
 
-/* line 82, sass/_header.sass */
-.page-header {
-  padding-top: 144px; }
-  /* line 85, sass/_header.sass */
-  .page-header .events-jumper {
-    margin-top: 144px; }
-
 @media screen and (max-width: 1600px) {
-  /* line 90, sass/_header.sass */
+  /* line 88, sass/_header.sass */
   .page-header {
-    height: 550px; }
-
-  /* line 93, sass/_header.sass */
-  .google-logo {
-    top: 515px; }
-
-  /* line 96, sass/_header.sass */
-  .bg-photo {
-    height: 600px; }
-
-  /* line 99, sass/_header.sass */
-  .page-header {
+    height: 550px;
     padding-top: 96px; }
-    /* line 102, sass/_header.sass */
+    /* line 92, sass/_header.sass */
     .page-header .events-jumper {
-      margin-top: 96px; } }
-@media screen and (max-width: 1024px) {
-  /* line 107, sass/_header.sass */
-  .page-header {
-    height: 350px; }
+      margin-top: 96px; }
+    /* line 95, sass/_header.sass */
+    .page-header .google-logo {
+      top: 515px; }
 
-  /* line 110, sass/_header.sass */
-  .google-logo {
-    top: 315px; }
-
-  /* line 113, sass/_header.sass */
+  /* line 98, sass/_header.sass */
   .bg-photo {
-    height: 400px; }
+    height: 600px; } }
+@media screen and (max-width: 1024px) {
+  /* line 103, sass/_header.sass */
+  .page-header {
+    height: 350px;
+    padding-top: 30px; }
+    /* line 107, sass/_header.sass */
+    .page-header .events-jumper {
+      margin-top: 6px; }
+    /* line 110, sass/_header.sass */
+    .page-header .google-logo {
+      position: absolute;
+      left: 24px;
+      top: 325px;
+      margin-left: 0; }
 
   /* line 116, sass/_header.sass */
-  .page-header {
-    padding-top: 30px; }
-    /* line 119, sass/_header.sass */
-    .page-header .events-jumper {
-      margin-top: 6px; } }
-@media screen and (max-width: 640px) {
-  /* line 124, sass/_header.sass */
-  .page-header {
-    height: 250px; }
-
-  /* line 127, sass/_header.sass */
-  .google-logo {
-    top: 215px; }
-
-  /* line 130, sass/_header.sass */
   .bg-photo {
-    height: 300px; }
-
-  /* line 133, sass/_header.sass */
+    height: 400px; } }
+@media screen and (max-width: 640px) {
+  /* line 121, sass/_header.sass */
   .page-header {
+    height: 250px;
     padding-top: 12px; }
-    /* line 136, sass/_header.sass */
+    /* line 125, sass/_header.sass */
     .page-header h2 {
       font-size: 20px; }
-    /* line 139, sass/_header.sass */
+    /* line 128, sass/_header.sass */
     .page-header .events-jumper {
-      margin-top: 4.8px; } }
+      margin-top: 4.8px; }
+    /* line 131, sass/_header.sass */
+    .page-header .google-logo {
+      position: absolute;
+      left: 24px;
+      top: 225px;
+      margin-left: 0; }
+
+  /* line 137, sass/_header.sass */
+  .bg-photo {
+    height: 300px; } }
 /* line 1, sass/_nav.sass */
 .page-nav {
   color: #7a7a7a;
@@ -464,8 +454,8 @@ button {
 /* line 88, sass/_nav.sass */
 .mobile-nav-hook {
   position: absolute;
-  bottom: 0;
-  top: auto;
+  top: 0;
+  bottom: auto;
   right: 0;
   left: auto;
   cursor: pointer;

@@ -72,65 +72,54 @@ $header-small: 250px
 // Huge displays; HDTV etc.
 .page-header
   height: $header-huge
-
-.google-logo
-  top: $header-huge - 35px
-
-.bg-photo
-  height: $header-huge+50px
-
-.page-header
   padding-top: $line*6
 
   .events-jumper
     margin-top: $line*6
 
+  .google-logo
+    top: $header-huge - 35px
+
+.bg-photo
+  height: $header-huge+50px
+
 // Large displays; most displays.
 @media screen and (max-width: 1600px)
   .page-header
     height: $header-large
-
-  .google-logo
-    top: $header-large - 35px
-
-  .bg-photo
-    height: $header-large+50px
-
-  .page-header
     padding-top: $line*4
 
     .events-jumper
       margin-top: $line*4
 
+    .google-logo
+      top: $header-large - 35px
+
+  .bg-photo
+    height: $header-large+50px
+
 // Small displays; largest image that iOS can load into single memory buffer.
 @media screen and (max-width: 1024px)
   .page-header
     height: $header-medium
-
-  .google-logo
-    top: $header-medium - 35px
-
-  .bg-photo
-    height: $header-medium+50px
-
-  .page-header
     padding-top: $line*1.25
 
     .events-jumper
       margin-top: $line/4
 
+    .google-logo
+      position: absolute
+      left: $line
+      top: $header-medium - 25px
+      margin-left: 0
+
+  .bg-photo
+    height: $header-medium+50px
+
 // Phablets.
 @media screen and (max-width: 640px)
   .page-header
     height: $header-small
-
-  .google-logo
-    top: $header-small - 35px
-
-  .bg-photo
-    height: $header-small+50px
-
-  .page-header
     padding-top: $line/2
 
     h2
@@ -138,3 +127,12 @@ $header-small: 250px
 
     .events-jumper
       margin-top: $line/5
+
+    .google-logo
+      position: absolute
+      left: $line
+      top: $header-small - 25px
+      margin-left: 0
+
+  .bg-photo
+    height: $header-small+50px
