@@ -252,7 +252,7 @@ button {
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
     background-image: linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
-    height: 250px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -348,7 +348,7 @@ button {
 
   /* line 116, sass/_header.sass */
   .page-header {
-    padding-top: 48px; }
+    padding-top: 30px; }
     /* line 119, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 6px; } }
