@@ -24,9 +24,7 @@
     };
     start_date = to_unix_date(new Date());
     end_date = to_unix_date(new Date('2014-12-31'));
-    // Disabled until some #wtm events are added.
-    // url = "https://google-developers.appspot.com/events/event-markers.public?tag=wtm&start=" + start_date + "&end=" + end_date;
-    url = "https://google-developers.appspot.com/events/event-markers.public?tag=dartflightschool&start=" + start_date + "&end=" + end_date;
+    url = "https://google-developers.appspot.com/events/event-markers.public?tag=wtm&start=" + start_date + "&end=" + end_date;
     if (Modernizr.cors) {
       return $http.get(url);
     } else {
