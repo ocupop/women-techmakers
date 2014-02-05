@@ -173,7 +173,7 @@ button {
 
 /* line 1, sass/_layers.sass */
 .bg-photo {
-  background-image: url('../img/header-1.jpg?1391632555');
+  background-image: url('../img/header-1.jpg?1391639894');
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -187,15 +187,15 @@ button {
     /* line 1, sass/_layers.sass */
     .bg-photo {
       background-size: auto;
-      background-image: url('../img/header-1-large.jpg?1391632694'); } }
+      background-image: url('../img/header-1-large.jpg?1391639827'); } }
   @media screen and (max-width: 1024px) {
     /* line 1, sass/_layers.sass */
     .bg-photo {
-      background-image: url('../img/header-1-medium.jpg?1391632784'); } }
+      background-image: url('../img/header-1-medium.jpg?1391640012'); } }
   @media screen and (max-width: 640px) {
     /* line 1, sass/_layers.sass */
     .bg-photo {
-      background-image: url('../img/header-1-small.jpg?1391632848'); } }
+      background-image: url('../img/header-1-small.jpg?1391639880'); } }
 
 /* line 7, sass/_layers.sass */
 .pattern-header {
@@ -244,16 +244,29 @@ button {
   text-align: center;
   width: 100%;
   overflow: hidden; }
-  /* line 8, sass/_header.sass */
+  /* line 7, sass/_header.sass */
+  .page-header .header-gradient {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(34%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.75; }
+  /* line 17, sass/_header.sass */
   .page-header h1.site-title img {
     width: 100%;
     max-width: 627px; }
-  /* line 12, sass/_header.sass */
+  /* line 21, sass/_header.sass */
   .page-header h2 {
     font-size: 30px;
     font-style: italic;
     margin-top: 18px; }
-  /* line 17, sass/_header.sass */
+  /* line 26, sass/_header.sass */
   .page-header .events-jumper {
     background: url('../img/find-events-button.png?1391562680') top no-repeat;
     background-size: 193px;
@@ -263,102 +276,102 @@ button {
     padding: 19.2px 0 0 0;
     width: 193px;
     height: 76px; }
-  /* line 27, sass/_header.sass */
+  /* line 36, sass/_header.sass */
   .page-header .google-logo {
     position: fixed;
     left: 50%;
     margin-left: -468px;
     width: 75px; }
-  /* line 37, sass/_header.sass */
+  /* line 46, sass/_header.sass */
   .page-header.dark h2 {
     color: white; }
-  /* line 40, sass/_header.sass */
+  /* line 49, sass/_header.sass */
   .page-header.dark .google-logo {
     opacity: 0.5; }
-  /* line 44, sass/_header.sass */
+  /* line 53, sass/_header.sass */
   .page-header.light h2 {
     color: #999999; }
-  /* line 47, sass/_header.sass */
+  /* line 56, sass/_header.sass */
   .page-header.light .google-logo {
     opacity: 1; }
 
-/* line 64, sass/_header.sass */
+/* line 73, sass/_header.sass */
 .page-header {
   height: 800px; }
 
-/* line 67, sass/_header.sass */
+/* line 76, sass/_header.sass */
 .google-logo {
   top: 765px; }
 
-/* line 70, sass/_header.sass */
+/* line 79, sass/_header.sass */
 .bg-photo {
   height: 850px; }
 
-/* line 73, sass/_header.sass */
+/* line 82, sass/_header.sass */
 .page-header {
   padding-top: 144px; }
-  /* line 76, sass/_header.sass */
+  /* line 85, sass/_header.sass */
   .page-header .events-jumper {
     margin-top: 144px; }
 
 @media screen and (max-width: 1600px) {
-  /* line 81, sass/_header.sass */
+  /* line 90, sass/_header.sass */
   .page-header {
     height: 550px; }
 
-  /* line 84, sass/_header.sass */
+  /* line 93, sass/_header.sass */
   .google-logo {
     top: 515px; }
 
-  /* line 87, sass/_header.sass */
+  /* line 96, sass/_header.sass */
   .bg-photo {
     height: 600px; }
 
-  /* line 90, sass/_header.sass */
+  /* line 99, sass/_header.sass */
   .page-header {
     padding-top: 96px; }
-    /* line 93, sass/_header.sass */
+    /* line 102, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 96px; } }
 @media screen and (max-width: 1024px) {
-  /* line 98, sass/_header.sass */
+  /* line 107, sass/_header.sass */
   .page-header {
     height: 350px; }
 
-  /* line 101, sass/_header.sass */
+  /* line 110, sass/_header.sass */
   .google-logo {
     top: 315px; }
 
-  /* line 104, sass/_header.sass */
+  /* line 113, sass/_header.sass */
   .bg-photo {
     height: 400px; }
 
-  /* line 107, sass/_header.sass */
+  /* line 116, sass/_header.sass */
   .page-header {
     padding-top: 48px; }
-    /* line 110, sass/_header.sass */
+    /* line 119, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 6px; } }
 @media screen and (max-width: 640px) {
-  /* line 115, sass/_header.sass */
+  /* line 124, sass/_header.sass */
   .page-header {
     height: 250px; }
 
-  /* line 118, sass/_header.sass */
+  /* line 127, sass/_header.sass */
   .google-logo {
     top: 215px; }
 
-  /* line 121, sass/_header.sass */
+  /* line 130, sass/_header.sass */
   .bg-photo {
     height: 300px; }
 
-  /* line 124, sass/_header.sass */
+  /* line 133, sass/_header.sass */
   .page-header {
     padding-top: 12px; }
-    /* line 127, sass/_header.sass */
+    /* line 136, sass/_header.sass */
     .page-header h2 {
       font-size: 20px; }
-    /* line 130, sass/_header.sass */
+    /* line 139, sass/_header.sass */
     .page-header .events-jumper {
       margin-top: 4.8px; } }
 /* line 1, sass/_nav.sass */

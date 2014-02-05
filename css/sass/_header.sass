@@ -4,6 +4,15 @@
   width: 100%
   overflow: hidden
 
+  .header-gradient
+    @include background-image(linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 34%, rgba(0,0,0,0) 100%))
+    width: 100%
+    height: 250px
+    position: absolute
+    top: 0
+    left: 0
+    opacity: .75
+
   h1.site-title
     img
       width: 100%
