@@ -239,8 +239,9 @@ button {
     background: url('../img/find-events-button.png?1391562680') top no-repeat;
     background-size: 193px;
     display: inline-block;
+    font-size: 18px;
     margin-top: 6px;
-    padding-top: 19.2px;
+    padding: 19.2px 0 0 0;
     width: 193px;
     height: 76px; }
 
