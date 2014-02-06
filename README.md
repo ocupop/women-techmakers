@@ -31,3 +31,4 @@ There is a `config.rb` Compass configuration file in the root. You have two choi
 - **Matthew McVickar**, Project Management and Development
 - **Grace Blevins**, Design and Photography
 - **Abby Lindstrom**, Photography
+- **Nicholas Krusick**, Map Marker Design

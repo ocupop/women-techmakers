@@ -34,9 +34,13 @@
   });
 
   APP.controller('MapCtrl', function($scope, EventMap) {
-    var event_registration_links, marker_url, _current_infobox;
-    event_registration_links = {
-      defaultEventUrl: "registration URL"
+    var event_registration_urls, marker_url, _current_infobox;
+    // We want to use a registration form link for each of the event titles,
+    // not the 'defaultEventURL' (which links to the Google Developers event
+    // listing). This array establishes which registration URL should be used
+    // for each event URL.
+    event_registration_urls = {
+      '/events/6542341821169664/' : 'http://goo.gl/x1jmQw'
     };
     marker_url = Modernizr.svg ? "img/marker.svg" : "img/marker.png";
     _current_infobox = null;
@@ -54,14 +58,14 @@
         return google.maps.event.trigger(this.map, 'resize');
       },
       mark: function(event, index) {
-        var info, info_content, marker,
+        var info, info_content, event_registration_url, marker,
           _this = this;
         marker = new google.maps.Marker({
           position: event.latlng,
           map: this.map,
           icon: marker_url
         });
-        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    <a href=\"https://developers.google.com" + event.defaultEventUrl + "\" target=\"_blank\">" + event.name + "</a>\n  </h3>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
+        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    <a href=\"" + event_registration_urls[event.defaultEventUrl] + "\" target=\"_blank\">" + event.name + "</a>\n  </h3>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
         info = new InfoBox({
           content: info_content
         });
