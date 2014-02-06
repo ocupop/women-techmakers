@@ -34,7 +34,10 @@
   });
 
   APP.controller('MapCtrl', function($scope, EventMap) {
-    var marker_url, _current_infobox;
+    var event_registration_links, marker_url, _current_infobox;
+    event_registration_links = {
+      defaultEventUrl: "registration URL"
+    };
     marker_url = Modernizr.svg ? "img/marker.svg" : "img/marker.png";
     _current_infobox = null;
     $scope.event_map = {

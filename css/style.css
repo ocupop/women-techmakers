@@ -263,7 +263,7 @@ button {
     max-width: 627px; }
   /* line 21, sass/_header.sass */
   .page-header h2 {
-    color: #999999;
+    color: white;
     font-size: 30px;
     font-style: italic;
     margin-top: 18px; }
