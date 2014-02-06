@@ -674,9 +674,14 @@ button {
     /* line 155, sass/_events.sass */
     .csstransforms .location-section .event-wrapper.ui-show .top-border,
     .csstransforms .location-section .event-wrapper.ui-show .bottom-border {
-      opacity: 1; } }
+      opacity: 1; }
+
+  /* line 159, sass/_events.sass */
+  .location-map-container + p {
+    color: #999999;
+    text-align: center; } }
 @media screen and (max-width: 800px) {
-  /* line 161, sass/_events.sass */
+  /* line 165, sass/_events.sass */
   .events-section .location-switch-modes button {
     font-size: 13px;
     height: 28.8px;
