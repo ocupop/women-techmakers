@@ -123,13 +123,12 @@
 
   // Parallax.
   APP.run(function($rootScope, $timeout) {
-    var $bg_photo, $header, $google_logo, $pattern_header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
+    var $bg_photo, $header, $pattern_header, $pattern_right, $pattern_left, $window, draw_background, height, pos, transform;
     pos = 1;
     $rootScope.scroll_pos = pos;
     $window = $(window);
     $bg_photo = $('.bg-photo');
     $header = $('.page-header .container');
-    $google_logo = $('.google-logo');
     $pattern_header = $('.pattern-header');
     $pattern_right = $('.pattern-right-layer');
     $pattern_left = $('.pattern-left-layer');
@@ -148,7 +147,6 @@
       $pattern_left.css(transform, "translate3d(0, " + (pos * -0.5) + "px, 0)");
       $bg_photo.css(transform, "translate3d(0, " + (pos * 0.3) + "px, 0)");
       $header.css(transform, "translate3d(0, " + (pos * -0.3) + "px, 0)");
-      $google_logo.css(transform, "translate3d(0, " + (pos * 0.25) + "px, 0)");
       return requestAnimationFrame(draw_background);
     };
     if (Modernizr.csstransforms3d && !Modernizr.touch) {
