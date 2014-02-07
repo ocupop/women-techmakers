@@ -5,6 +5,10 @@
 
   APP = angular.module('womentechmakers', ['ocupop', 'ui.directives']);
 
+  APP.value('header_height', function() {
+    return 0;
+  });
+
   APP.controller('NavCtrl', function($scope) {
     $scope.nav = {
       show_mobile: false
@@ -109,18 +113,13 @@
   });
 
   APP.run(function($rootScope, $timeout) {
-    var $header, $nav, $nav_top, $window, pos, stick_or_unstick_navigation;
+    var $header, $nav, $nav_top, $window, pos;
     pos = 1;
-    $rootScope.scroll_pos = pos;
     $window = $(window);
     $nav = $('.page-nav');
     $nav_top = $('.page-nav').offset().top;
     $header = $('.page-header');
-    $window.on("scroll", function() {
-      $rootScope.scroll_pos = pos;
-      return $rootScope.$apply();
-    });
-    stick_or_unstick_navigation = function() {
+    return $window.on("scroll", function() {
       pos = $window.scrollTop();
       if (pos >= $nav_top) {
         $nav.addClass('fixed');
@@ -129,8 +128,7 @@
         $nav.removeClass('fixed');
         return $header.removeClass('fixed-nav-compensation');
       }
-    };
-    return stick_or_unstick_navigation;
+    });
   });
 
   APP.run(function($rootScope, $timeout) {

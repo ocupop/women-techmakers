@@ -2,6 +2,10 @@
 
 APP = angular.module('womentechmakers', ['ocupop', 'ui.directives']);
 
+
+APP.value 'header_height', ()-> 0
+
+
 APP.controller 'NavCtrl', ($scope)->
 
   $scope.nav = {
@@ -9,6 +13,7 @@ APP.controller 'NavCtrl', ($scope)->
   }
 
   $scope.$on 'current_section', ()-> $scope.nav.show_mobile = false
+
 
 APP.factory 'EventMap', ($http)->
   to_unix_date = (date)-> Math.floor date.valueOf() / 1000
@@ -56,7 +61,6 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # NYC
     '/events/6542341821169664/' : 'http://goo.gl/x1jmQw'
   };
-
 
   marker_url = if Modernizr.svg
     "img/marker.svg"
@@ -125,15 +129,15 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
 
   $scope.event_map.load()
 
+
 APP.filter 'coerceDate', ()->
   (source)->
     return new Date(source * 1000)
 
+
 # Sticky Navigation
 APP.run ($rootScope, $timeout)->
   pos = 1
-  $rootScope.scroll_pos = pos
-
   $window = $(window)
 
   $nav = $('.page-nav')
@@ -141,10 +145,6 @@ APP.run ($rootScope, $timeout)->
   $header = $('.page-header')
 
   $window.on "scroll", ()->
-    $rootScope.scroll_pos = pos
-    $rootScope.$apply()
-
-  stick_or_unstick_navigation = ()->
     pos = $window.scrollTop()
 
     if pos >= $nav_top
@@ -154,7 +154,6 @@ APP.run ($rootScope, $timeout)->
       $nav.removeClass('fixed')
       $header.removeClass('fixed-nav-compensation')
 
-  stick_or_unstick_navigation
 
 # Parallax
 APP.run ($rootScope, $timeout)->
