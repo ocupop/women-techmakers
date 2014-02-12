@@ -1,5 +1,9 @@
 .events-section
+  h2
+    margin-bottom: $line*.8
+
   .map-canvas
+    border-top: solid 3px $color-lightblue
     margin-bottom: $line
     height: 300px
 
@@ -17,14 +21,14 @@
   .location-switch-modes
     width: 100%
     position: absolute
-    top: $line/2
+    top: -$line*.75
     z-index: 100
     text-align: center
 
     button
       @extend .button
       @extend .button.white
-      @include box-shadow(rgba(black, .25) 0 0 5px)
+      @include box-shadow(rgba(black, .5) 0 0 5px)
       cursor: pointer
       display: inline-block
       font-size: $line*.75

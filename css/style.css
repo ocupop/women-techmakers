@@ -491,106 +491,110 @@ button {
 @media screen and (max-width: 640px) {
   display: none; }
 /* line 2, sass/_events.sass */
+.events-section h2 {
+  margin-bottom: 19.2px; }
+/* line 5, sass/_events.sass */
 .events-section .map-canvas {
+  border-top: solid 3px #4fc3f7;
   margin-bottom: 24px;
   height: 300px; }
   @media (min-width: 640px) {
-    /* line 2, sass/_events.sass */
+    /* line 5, sass/_events.sass */
     .events-section .map-canvas {
       height: 500px; } }
-/* line 9, sass/_events.sass */
+/* line 13, sass/_events.sass */
 .events-section .infoBox {
   width: 320px !important; }
-  /* line 12, sass/_events.sass */
+  /* line 16, sass/_events.sass */
   .events-section .infoBox img {
     border-radius: 4.8px;
     margin: 6px !important;
     z-index: 10; }
-/* line 17, sass/_events.sass */
+/* line 21, sass/_events.sass */
 .events-section .location-switch-modes {
   width: 100%;
   position: absolute;
-  top: 12px;
+  top: -18px;
   z-index: 100;
   text-align: center; }
-  /* line 24, sass/_events.sass */
+  /* line 28, sass/_events.sass */
   .events-section .location-switch-modes button {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
     height: 36px;
     padding: 0 48px;
     margin: 0 12px; }
-    /* line 35, sass/_events.sass */
+    /* line 39, sass/_events.sass */
     .events-section .location-switch-modes button:focus {
       outline: none; }
-    /* line 38, sass/_events.sass */
+    /* line 42, sass/_events.sass */
     .events-section .location-switch-modes button.ui-show {
       z-index: 10; }
-/* line 42, sass/_events.sass */
+/* line 46, sass/_events.sass */
 .events-section .event-infobox {
   background-color: rgba(69, 113, 180, 0.95);
   border-radius: 6px;
   padding: 12px 12px; }
-  /* line 47, sass/_events.sass */
+  /* line 51, sass/_events.sass */
   .events-section .event-infobox h3,
   .events-section .event-infobox p {
     color: #eeeeee;
     font-family: "Open Sans", sans-serif;
     line-height: 1.2; }
-  /* line 53, sass/_events.sass */
+  /* line 57, sass/_events.sass */
   .events-section .event-infobox p {
     padding-bottom: 0; }
-  /* line 56, sass/_events.sass */
+  /* line 60, sass/_events.sass */
   .events-section .event-infobox h3 {
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 12px; }
-  /* line 61, sass/_events.sass */
+  /* line 65, sass/_events.sass */
   .events-section .event-infobox a {
     text-decoration: underline;
     font-size: inherit;
     font-family: inherit; }
-/* line 66, sass/_events.sass */
+/* line 70, sass/_events.sass */
 .events-section .location-event-list {
   margin: 0px;
   padding-top: 72px; }
-  /* line 70, sass/_events.sass */
+  /* line 74, sass/_events.sass */
   .events-section .location-event-list .event-wrapper {
     clear: both;
     padding: 12px 12px; }
-  /* line 74, sass/_events.sass */
+  /* line 78, sass/_events.sass */
   .events-section .location-event-list time {
     color: #999999;
     float: left;
     font-size: 14px;
     padding-top: 3px; }
-  /* line 80, sass/_events.sass */
+  /* line 84, sass/_events.sass */
   .events-section .location-event-list a {
     text-decoration: underline;
     cursor: pointer; }
-  /* line 84, sass/_events.sass */
+  /* line 88, sass/_events.sass */
   .events-section .location-event-list .event-title,
   .events-section .location-event-list .event-location {
     margin-left: 130px; }
-  /* line 88, sass/_events.sass */
+  /* line 92, sass/_events.sass */
   .events-section .location-event-list .event-title {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 0; }
-  /* line 93, sass/_events.sass */
+  /* line 97, sass/_events.sass */
   .events-section .location-event-list .event-location {
     padding-bottom: 0; }
 
-/* line 96, sass/_events.sass */
+/* line 100, sass/_events.sass */
 .location-section .event-wrapper.ui-show {
   background-color: #4571b4; }
 
 @media (min-width: 960px) {
-  /* line 101, sass/_events.sass */
+  /* line 105, sass/_events.sass */
   .csstransforms .location-section .top-border,
   .csstransforms .location-section .bottom-border {
     position: absolute;
@@ -602,18 +606,18 @@ button {
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s; }
-    /* line 110, sass/_events.sass */
+    /* line 114, sass/_events.sass */
     .csstransforms .location-section .top-border:before, .csstransforms .location-section .top-border:after,
     .csstransforms .location-section .bottom-border:before,
     .csstransforms .location-section .bottom-border:after {
       content: "";
       position: absolute;
       height: 57.73503%; }
-  /* line 116, sass/_events.sass */
+  /* line 120, sass/_events.sass */
   .csstransforms .location-section .top-border {
     top: 0;
     border-top: 4px solid #4571b4; }
-    /* line 120, sass/_events.sass */
+    /* line 124, sass/_events.sass */
     .csstransforms .location-section .top-border:before {
       top: -2px;
       left: 0;
@@ -628,7 +632,7 @@ button {
       -ms-transform-origin: 0 0;
       -o-transform-origin: 0 0;
       transform-origin: 0 0; }
-    /* line 127, sass/_events.sass */
+    /* line 131, sass/_events.sass */
     .csstransforms .location-section .top-border:after {
       top: 0;
       right: -1px;
@@ -643,11 +647,11 @@ button {
       -ms-transform-origin: 0 0;
       -o-transform-origin: 0 0;
       transform-origin: 0 0; }
-  /* line 134, sass/_events.sass */
+  /* line 138, sass/_events.sass */
   .csstransforms .location-section .bottom-border {
     bottom: 0;
     border-bottom: 4px solid #4571b4; }
-    /* line 138, sass/_events.sass */
+    /* line 142, sass/_events.sass */
     .csstransforms .location-section .bottom-border:before {
       bottom: 0;
       left: -1px;
@@ -662,7 +666,7 @@ button {
       -ms-transform-origin: 100% 100%;
       -o-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
-    /* line 145, sass/_events.sass */
+    /* line 149, sass/_events.sass */
     .csstransforms .location-section .bottom-border:after {
       bottom: -2px;
       right: 0;
@@ -677,20 +681,20 @@ button {
       -ms-transform-origin: 100% 100%;
       -o-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
-  /* line 152, sass/_events.sass */
+  /* line 156, sass/_events.sass */
   .csstransforms .location-section .event-wrapper.ui-show {
     background-color: transparent; }
-    /* line 155, sass/_events.sass */
+    /* line 159, sass/_events.sass */
     .csstransforms .location-section .event-wrapper.ui-show .top-border,
     .csstransforms .location-section .event-wrapper.ui-show .bottom-border {
       opacity: 1; }
 
-  /* line 159, sass/_events.sass */
+  /* line 163, sass/_events.sass */
   .location-map-container + p {
     color: #999999;
     text-align: center; } }
 @media screen and (max-width: 800px) {
-  /* line 165, sass/_events.sass */
+  /* line 169, sass/_events.sass */
   .events-section .location-switch-modes button {
     font-size: 13px;
     height: 28.8px;
