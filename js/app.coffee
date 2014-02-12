@@ -81,7 +81,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
         position: event.latlng
         map: @map
         icon: {
-          url: "../img/marker@2x.png"
+          url: "../img/marker.png"
           scaledSize: new google.maps.Size(19, 33)
         }
       }
