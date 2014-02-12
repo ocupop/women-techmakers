@@ -561,7 +561,7 @@ button {
 /* line 70, sass/_events.sass */
 .events-section .location-event-list {
   margin: 0px;
-  padding-top: 72px; }
+  padding-top: 48px; }
   /* line 74, sass/_events.sass */
   .events-section .location-event-list .event-wrapper {
     clear: both;
