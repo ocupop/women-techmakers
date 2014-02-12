@@ -96,3 +96,14 @@ button
 
     // Two colors, diagonal split
     @include background-image(linear-gradient($gradient-angle, #ddd*.95 0%, #ddd*.95 50%, #ddd 50%, #ddd 100%))
+
+  &.white
+    color: #999
+
+    $button-color: #fafafa
+
+    // IE6-9 fallback on horizontal gradient
+    @include filter-gradient(#eee, #ddd, horizontal)
+
+    // Two colors, diagonal split
+    @include background-image(linear-gradient($gradient-angle, $button-color*.95 0%, $button-color*.95 50%, $button-color 50%, $button-color 100%))
