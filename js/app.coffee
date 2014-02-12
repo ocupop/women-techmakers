@@ -62,11 +62,6 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/6542341821169664/' : 'http://goo.gl/x1jmQw'
   };
 
-  marker_url = if Modernizr.svg
-    "img/marker.svg"
-  else
-    "img/marker.png"
-
   _current_infobox = null
 
   $scope.event_map = {
@@ -85,7 +80,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       marker = new google.maps.Marker {
         position: event.latlng
         map: @map
-        icon: marker_url
+        icon: "img/marker-1x.png"
       }
 
       # Use the registration URL if one has been supplied.

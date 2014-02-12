@@ -35,13 +35,12 @@
   });
 
   APP.controller('MapCtrl', function($scope, EventMap) {
-    var event_registration_urls, marker_url, _current_infobox;
+    var event_registration_urls, _current_infobox;
     event_registration_urls = {
       '/events/6298372969332736/': 'https://plus.google.com/u/0/events/c39k2o851o1kr6ukan8uoj1qqcs',
       '/events/6254656321748992/': 'http://goo.gl/x1jmQw',
       '/events/6542341821169664/': 'http://goo.gl/x1jmQw'
     };
-    marker_url = Modernizr.svg ? "img/marker.svg" : "img/marker.png";
     _current_infobox = null;
     $scope.event_map = {
       show: 'map',
@@ -62,7 +61,7 @@
         marker = new google.maps.Marker({
           position: event.latlng,
           map: this.map,
-          icon: marker_url
+          icon: "img/marker-1x.png"
         });
         if (event.defaultEventUrl in event_registration_urls) {
           event.desiredUrl = event_registration_urls[event.defaultEventUrl];
