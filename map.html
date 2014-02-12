@@ -53,7 +53,10 @@
 					var marker = new google.maps.Marker({
 						position: val.latlng,
 						map: map,
-						icon: 'img/marker-1x.png'
+						icon: {
+							url: "img/marker@2x.png",
+		          scaledSize: new google.maps.Size(19, 33)
+						}
 					});
 
 					var $content = $("<div class='map-info'><h2>" + val.name + "</h2><h3>" + val.location + "</h3></div>");

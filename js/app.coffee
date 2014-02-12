@@ -80,7 +80,10 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       marker = new google.maps.Marker {
         position: event.latlng
         map: @map
-        icon: "img/marker-1x.png"
+        icon: {
+          url: "../img/marker@2x.png"
+          scaledSize: new google.maps.Size(19, 33)
+        }
       }
 
       # Use the registration URL if one has been supplied.

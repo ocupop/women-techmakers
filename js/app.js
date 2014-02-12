@@ -61,7 +61,10 @@
         marker = new google.maps.Marker({
           position: event.latlng,
           map: this.map,
-          icon: "img/marker-1x.png"
+          icon: {
+            url: "../img/marker@2x.png",
+            scaledSize: new google.maps.Size(19, 33)
+          }
         });
         if (event.defaultEventUrl in event_registration_urls) {
           event.desiredUrl = event_registration_urls[event.defaultEventUrl];
