@@ -57,7 +57,7 @@
         return google.maps.event.trigger(this.map, 'resize');
       },
       mark: function(event, index) {
-        var event_url, info, info_content, marker,
+        var info, info_content, marker,
           _this = this;
         marker = new google.maps.Marker({
           position: event.latlng,
@@ -65,11 +65,11 @@
           icon: marker_url
         });
         if (event.defaultEventUrl in event_registration_urls) {
-          event_url = event_registration_urls[event.defaultEventUrl];
+          event.desiredUrl = event_registration_urls[event.defaultEventUrl];
         } else {
-          event_url = "https://developers.google.com" + event.defaultEventUrl;
+          event.desiredUrl = "https://developers.google.com" + event.defaultEventUrl;
         }
-        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    <a href=\"" + event_url + "\" target=\"_blank\">" + event.name + "</a>\n  </h3>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
+        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    <a href=\"" + event.desiredUrl + "\" target=\"_blank\">" + event.name + "</a>\n  </h3>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
         info = new InfoBox({
           content: info_content
         });

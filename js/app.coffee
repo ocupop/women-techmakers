@@ -90,14 +90,14 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
 
       # Use the registration URL if one has been supplied.
       if event.defaultEventUrl of event_registration_urls
-        event_url = event_registration_urls[event.defaultEventUrl]
+        event.desiredUrl = event_registration_urls[event.defaultEventUrl]
       else
-        event_url = "https://developers.google.com" + event.defaultEventUrl
+        event.desiredUrl = "https://developers.google.com" + event.defaultEventUrl
 
       info_content = """
           <div class="event-infobox">
             <h3 class="event-title">
-              <a href="#{event_url}" target="_blank">#{event.name}</a>
+              <a href="#{event.desiredUrl}" target="_blank">#{event.name}</a>
             </h3>
             <p class="event-location">#{event.location}</p>
           </div>

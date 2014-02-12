@@ -79,7 +79,7 @@
             <time datetime="{{event.start|coerceDate|date:'yyyy-MM-dd'}}"
               ng-bind="event.start|coerceDate|date:'longDate'"></time>
             <h3 class="event-title" style="font-size:18px">
-              <a ng-href="https://developers.google.com{{event.defaultEventUrl}}"
+              <a ng-href="{{event.desiredUrl}}"
                 ng-bind="event.name" target="_blank"></a>
             </h3>
             <p class="event-location" ng-bind="event.location"></p>
