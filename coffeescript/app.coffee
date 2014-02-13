@@ -60,67 +60,67 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     ## https://docs.google.com/a/ocupop.com/spreadsheets/d/1W9aVMRxgBzrw9jWs50b2ITas3l8fvVA4jjAJSbfcbCM
 
     # Women Techmakers Summit: Mountain View
-    '/events/6254656321748992' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
+    '/events/6254656321748992/' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
 
     # Women Techmakers Summit: New York City
-    '/events/6542341821169664' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
+    '/events/6542341821169664/' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
 
     # Women Techmakers Summit: Campus London
-    # '/events/5860515494494208' : 'TK'
+    # '/events/5860515494494208/' : 'TK'
 
     # Women Techmakers Summit: Campus Tel Aviv
     # '/events/6015116466192384'   : 'TK'
 
     # Women Techmakers: Google Kirkland
-    '/events/4701918941151232' : 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'
+    '/events/4701918941151232/' : 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'
 
     # Women Techmakers: Google Pittsburgh
-    # '/events/6574187929927680' : 'TK'
+    # '/events/6574187929927680/' : 'TK'
 
     # Women Techmakers: Google Hyderabad
-    # '/events/5871630051966976' : 'TK'
+    # '/events/5871630051966976/' : 'TK'
 
     # Women Techmakers: Google Zurich
-    # '/events/5948086790651904' : 'TK'
+    # '/events/5948086790651904/' : 'TK'
 
     # Women Techmakers: Google Sydney
-    # '/events/6107968290422784' : 'TK'
+    # '/events/6107968290422784/' : 'TK'
 
     # Women Techmakers: Google Tokyo
-    # '/events/5412049102307328' : 'TK'
+    # '/events/5412049102307328/' : 'TK'
 
     # Women Techmakers: Google Bangalore
-    # '/events/4707878476709888' : 'TK'
+    # '/events/4707878476709888/' : 'TK'
 
     # Women Techmakers: Google Munich
-    # '/events/5583022757773312' : 'TK'
+    # '/events/5583022757773312/' : 'TK'
 
     # Women Techmakers: Google Krakow
-    # '/events/4684516002103296' : 'TK'
+    # '/events/4684516002103296/' : 'TK'
 
     # Women Techmakers: Google Paris
-    # '/events/5760102782992384' : 'TK'
+    # '/events/5760102782992384/' : 'TK'
 
     # Women Techmakers: Google Seoul
-    # '/events/5109725951688704' : 'TK'
+    # '/events/5109725951688704/' : 'TK'
 
     # Women Techmakers: Google Singapore
-    # '/events/5771173463851008' : 'TK'
+    # '/events/5771173463851008/' : 'TK'
 
     # Women Techmakers: Google Cambridge
-    # '/events/5936218856488960' : 'TK'
+    # '/events/5936218856488960/' : 'TK'
 
     # Women Techmakers: Google Chicago
-    # '/events/5720199168786432' : 'TK'
+    # '/events/5720199168786432/' : 'TK'
 
     # Women Techmakers: Google Boulder
-    # '/events/5842399255330816' : 'TK'
+    # '/events/5842399255330816/' : 'TK'
 
     # Women Techmakers: Google Waterloo
-    # '/events/5578179364257792' : 'TK'
+    # '/events/5578179364257792/' : 'TK'
 
     # Women Techmakers: Google São Paulo
-    # '/events/6199844687314944' : 'TK'
+    # '/events/6199844687314944/' : 'TK'
   };
 
   _current_infobox = null

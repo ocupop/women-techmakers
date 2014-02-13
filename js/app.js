@@ -38,9 +38,9 @@
     var event_registration_urls, _current_infobox;
     event_registration_urls = {
       '/events/6298372969332736/': 'https://plus.google.com/u/0/events/c39k2o851o1kr6ukan8uoj1qqcs',
-      '/events/6254656321748992': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
-      '/events/6542341821169664': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
-      '/events/4701918941151232': 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'
+      '/events/6254656321748992/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
+      '/events/6542341821169664/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
+      '/events/4701918941151232/': 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'
     };
     _current_infobox = null;
     $scope.event_map = {
