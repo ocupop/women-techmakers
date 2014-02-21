@@ -66,7 +66,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/6542341821169664/' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
 
     # Women Techmakers Summit: Campus London
-    # '/events/5860515494494208/' : 'TK'
+    '/events/5860515494494208/' : 'http://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873'
 
     # Women Techmakers Summit: Campus Tel Aviv
     # '/events/6015116466192384'   : 'TK'
@@ -81,7 +81,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # '/events/5871630051966976/' : 'TK'
 
     # Women Techmakers: Google Zurich
-    # '/events/5948086790651904/' : 'TK'
+    '/events/5948086790651904/' : 'https://www.eventbrite.ca/e/women-techmakers-google-zurich-registration-10590944801'
 
     # Women Techmakers: Google Sydney
     # '/events/6107968290422784/' : 'TK'
@@ -99,13 +99,13 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # '/events/4684516002103296/' : 'TK'
 
     # Women Techmakers: Google Paris
-    # '/events/5760102782992384/' : 'TK'
+    '/events/5760102782992384/' : 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275'
 
     # Women Techmakers: Google Seoul
     # '/events/5109725951688704/' : 'TK'
 
     # Women Techmakers: Google Singapore
-    # '/events/5771173463851008/' : 'TK'
+    '/events/5771173463851008/' : 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449'
 
     # Women Techmakers: Google Cambridge
     # '/events/5936218856488960/' : 'TK'
@@ -117,10 +117,10 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # '/events/5842399255330816/' : 'TK'
 
     # Women Techmakers: Google Waterloo
-    # '/events/5578179364257792/' : 'TK'
+    '/events/5578179364257792/' : 'https://www.eventbrite.com/e/women-techmakers-google-waterloo-registration-10591291839'
 
     # Women Techmakers: Google São Paulo
-    # '/events/6199844687314944/' : 'TK'
+    '/events/6199844687314944/' : 'http://www.meetup.com/GDG-SP/events/165977312'
   };
 
   _current_infobox = null
