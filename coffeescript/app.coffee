@@ -69,7 +69,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5860515494494208/' : 'http://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873'
 
     # Women Techmakers Summit: Campus Tel Aviv
-    '/events/6015116466192384'  : 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121'
+    '/events/6015116466192384/' : 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121'
 
     # Women Techmakers: Google Kirkland
     '/events/4701918941151232/' : 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'

@@ -41,7 +41,7 @@
       '/events/6254656321748992/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
       '/events/6542341821169664/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
       '/events/5860515494494208/': 'http://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873',
-      '/events/6015116466192384': 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121',
+      '/events/6015116466192384/': 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121',
       '/events/4701918941151232/': 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225',
       '/events/5948086790651904/': 'https://www.eventbrite.ca/e/women-techmakers-google-zurich-registration-10590944801',
       '/events/5412049102307328/': 'https://services.google.com/fb/forms/womentechmakerstok/',
