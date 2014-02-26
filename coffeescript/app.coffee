@@ -111,7 +111,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # '/events/5936218856488960/' : 'TK'
 
     # Women Techmakers: Google Chicago
-    # '/events/5720199168786432/' : 'TK'
+    '/events/5720199168786432/' : 'http://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569'
 
     # Women Techmakers: Google Boulder
     # '/events/5842399255330816/' : 'TK'
