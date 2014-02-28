@@ -49,6 +49,7 @@
       '/events/5760102782992384/': 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275',
       '/events/5771173463851008/': 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449',
       '/events/5720199168786432/': 'http://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569',
+      '/events/5842399255330816/': 'https://www.eventbrite.ca/e/women-techmakers-google-boulder-registration-10591267767',
       '/events/5578179364257792/': 'https://www.eventbrite.com/e/women-techmakers-google-waterloo-registration-10591291839',
       '/events/6199844687314944/': 'http://www.meetup.com/GDG-SP/events/165977312'
     };
