@@ -78,7 +78,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     # '/events/6574187929927680/' : 'TK'
 
     # Women Techmakers: Google Hyderabad
-    # '/events/5871630051966976/' : 'TK'
+    '/events/5871630051966976/' : 'https://docs.google.com/a/google.com/forms/d/1ze4bydjtj7Uh5fgCPPRLzuikQRGjXBVO7YfJMSYOYks/viewform'
 
     # Women Techmakers: Google Zurich
     '/events/5948086790651904/' : 'https://www.eventbrite.ca/e/women-techmakers-google-zurich-registration-10590944801'
@@ -108,7 +108,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5771173463851008/' : 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449'
 
     # Women Techmakers: Google Cambridge
-    # '/events/5936218856488960/' : 'TK'
+    '/events/5936218856488960/' : 'https://www.eventbrite.ca/e/women-techmakers-google-cambridge-registration-10591179503'
 
     # Women Techmakers: Google Chicago
     '/events/5720199168786432/' : 'http://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569'
