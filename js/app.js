@@ -40,7 +40,7 @@
       '/events/6298372969332736/': 'https://plus.google.com/u/0/events/c39k2o851o1kr6ukan8uoj1qqcs',
       '/events/6254656321748992/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
       '/events/6542341821169664/': 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0',
-      '/events/5860515494494208/': 'http://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873',
+      '/events/5860515494494208/': 'https://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873',
       '/events/6015116466192384/': 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121',
       '/events/4701918941151232/': 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225',
       '/events/5871630051966976/': 'https://docs.google.com/a/google.com/forms/d/1ze4bydjtj7Uh5fgCPPRLzuikQRGjXBVO7YfJMSYOYks/viewform',
@@ -50,7 +50,7 @@
       '/events/5760102782992384/': 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275',
       '/events/5771173463851008/': 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449',
       '/events/5936218856488960/': 'https://www.eventbrite.ca/e/women-techmakers-google-cambridge-registration-10591179503',
-      '/events/5720199168786432/': 'http://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569',
+      '/events/5720199168786432/': 'https://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569',
       '/events/5842399255330816/': 'https://www.eventbrite.ca/e/women-techmakers-google-boulder-registration-10591267767',
       '/events/5578179364257792/': 'https://www.eventbrite.com/e/women-techmakers-google-waterloo-registration-10591291839',
       '/events/6199844687314944/': 'http://www.meetup.com/GDG-SP/events/165977312'

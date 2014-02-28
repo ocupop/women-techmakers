@@ -66,7 +66,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/6542341821169664/' : 'https://docs.google.com/a/google.com/spreadsheet/viewform?formkey=dEQtNW1Ld3IxV3BwZ2pRUzNtaXVkcEE6MA#gid=0'
 
     # Women Techmakers Summit: Campus London
-    '/events/5860515494494208/' : 'http://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873'
+    '/events/5860515494494208/' : 'https://www.eventbrite.ca/e/women-techmakers-summit-campus-london-registration-10607016873'
 
     # Women Techmakers Summit: Campus Tel Aviv
     '/events/6015116466192384/' : 'https://www.eventbrite.com/e/gdg-women-israel-launch-international-womens-day-tickets-10713752121'
@@ -111,7 +111,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5936218856488960/' : 'https://www.eventbrite.ca/e/women-techmakers-google-cambridge-registration-10591179503'
 
     # Women Techmakers: Google Chicago
-    '/events/5720199168786432/' : 'http://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569'
+    '/events/5720199168786432/' : 'https://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569'
 
     # Women Techmakers: Google Boulder
     '/events/5842399255330816/' : 'https://www.eventbrite.ca/e/women-techmakers-google-boulder-registration-10591267767'
