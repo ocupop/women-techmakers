@@ -48,6 +48,7 @@
       '/events/5412049102307328/': 'https://services.google.com/fb/forms/womentechmakerstok/',
       '/events/5583022757773312/': 'https://www.eventbrite.ca/e/women-techmakers-google-munich-registration-10591073185',
       '/events/5760102782992384/': 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275',
+      '/events/5109725951688704/': 'https://docs.google.com/a/google.com/forms/d/17TZ06sk_GhA8B2jPWhyOlgxh1j7GzTqAGP3OgqKHr9o/viewform',
       '/events/5771173463851008/': 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449',
       '/events/5936218856488960/': 'https://www.eventbrite.ca/e/women-techmakers-google-cambridge-registration-10591179503',
       '/events/5720199168786432/': 'https://www.eventbrite.ca/e/women-techmakers-google-chicago-registration-10591201569',

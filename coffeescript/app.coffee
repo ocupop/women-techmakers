@@ -102,7 +102,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5760102782992384/' : 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275'
 
     # Women Techmakers: Google Seoul
-    # '/events/5109725951688704/' : 'TK'
+    '/events/5109725951688704/' : 'https://docs.google.com/a/google.com/forms/d/17TZ06sk_GhA8B2jPWhyOlgxh1j7GzTqAGP3OgqKHr9o/viewform'
 
     # Women Techmakers: Google Singapore
     '/events/5771173463851008/' : 'https://www.eventbrite.com/e/women-techmakers-google-singapore-registration-10591161449'
