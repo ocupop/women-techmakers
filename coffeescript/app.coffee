@@ -75,7 +75,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/4701918941151232/' : 'https://www.eventbrite.com/e/women-techmakers-google-kirkland-registration-10590752225'
 
     # Women Techmakers: Google Pittsburgh
-    # '/events/6574187929927680/' : 'TK'
+    '/events/6574187929927680/' : 'https://www.eventbrite.ca/e/women-techmakers-google-pittsburgh-registration-10590846507'
 
     # Women Techmakers: Google Hyderabad
     '/events/5871630051966976/' : 'https://docs.google.com/a/google.com/forms/d/1ze4bydjtj7Uh5fgCPPRLzuikQRGjXBVO7YfJMSYOYks/viewform'
@@ -96,7 +96,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5583022757773312/' : 'https://www.eventbrite.ca/e/women-techmakers-google-munich-registration-10591073185'
 
     # Women Techmakers: Google Krakow
-    # '/events/4684516002103296/' : 'TK'
+    '/events/4684516002103296/' : 'http://www.eventbrite.com/e/women-techmakers-krakow-tickets-10615211383'
 
     # Women Techmakers: Google Paris
     '/events/5760102782992384/' : 'https://www.eventbrite.ca/e/women-techmakers-google-paris-registration-10591103275'
