@@ -2,9 +2,7 @@
 
 APP = angular.module('womentechmakers', ['ocupop', 'ui.directives']);
 
-
 APP.value 'header_height', ()-> 0
-
 
 APP.controller 'NavCtrl', ($scope)->
 
@@ -53,7 +51,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
   # listing). This array establishes which registration URL should be used
   # for each event URL.
   event_registration_urls = {
-    # DevFestW Omsk -- this URL was in the event listing so I plugged it in.
+    # DevFestW Omsk -- this URL was in the description of this event on the Google Developers Event page, so I plugged it in.
     '/events/6298372969332736/' : 'https://plus.google.com/u/0/events/c39k2o851o1kr6ukan8uoj1qqcs'
 
     ## Replacement URLS provided by Adriana Cerundolo (adri@google.com)
@@ -93,7 +91,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     '/events/5412049102307328/' : 'https://services.google.com/fb/forms/womentechmakerstok/'
 
     # Women Techmakers: Google Bangalore
-    # '/events/4707878476709888/' : 'TK'
+    '/events/4707878476709888/' : 'https://docs.google.com/a/google.com/forms/d/1rxqTSZDWB8N4GTEatiRkwqGInVqzK-qV54Z8EuhnXl8/viewform'
 
     # Women Techmakers: Google Munich
     '/events/5583022757773312/' : 'https://www.eventbrite.ca/e/women-techmakers-google-munich-registration-10591073185'
@@ -177,10 +175,8 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
 
         info.open @map, marker
 
-
     load: ()->
       EventMap.success (data)=>
-
         @events = data
         @mark e, index for e, index in @events
       @resize()
