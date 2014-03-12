@@ -16,7 +16,7 @@ APP.controller 'NavCtrl', ($scope)->
 APP.factory 'EventMap', ($http)->
   to_unix_date = (date)-> Math.floor date.valueOf() / 1000
 
-  start_date = to_unix_date new Date()
+  start_date = to_unix_date new Date('2014-01-01')
   end_date = to_unix_date new Date('2014-12-31')
 
   url = "https://google-developers.appspot.com/events/event-markers.public?tag=wtm&start=#{start_date}&end=#{end_date}"
