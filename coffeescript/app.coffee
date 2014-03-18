@@ -12,10 +12,9 @@ APP.controller 'NavCtrl', ($scope)->
 
   $scope.$on 'current_section', ()-> $scope.nav.show_mobile = false
 
+to_unix_date = (date)-> Math.floor date.valueOf() / 1000
 
 APP.factory 'EventMap', ($http)->
-  to_unix_date = (date)-> Math.floor date.valueOf() / 1000
-
   start_date = to_unix_date new Date('2014-01-01')
   end_date = to_unix_date new Date('2014-12-31')
 
@@ -139,11 +138,35 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
     resize: ()->
       google.maps.event.trigger @map, 'resize'
     mark: (event, index)->
+
+      # console.log event.start
+
+      # If the event is in the past, give it a gray icon.
+      event_date = new Date(event.start*1000)
+      current_date = new Date()
+      event_date_formatted = event_date.toLocaleDateString('en-us', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+      })
+
+      console.log event_date
+      console.log current_date
+      console.log event_date_formatted
+
+      if event_date > current_date
+        marker_image = "marker.png"
+        event_date = event_date_formatted
+      else
+        marker_image = "marker-gray.png"
+        event_date = event_date_formatted + " <span class=\"past-event-notice\">(Past Event)</span>"
+
+      # Construct the location marker.
       marker = new google.maps.Marker {
         position: event.latlng
         map: @map
         icon: {
-          url: "../img/marker.png"
+          url: "../img/" + marker_image
           scaledSize: new google.maps.Size(19, 33)
         }
       }
@@ -159,6 +182,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
             <h3 class="event-title">
               <a href="#{event.desiredUrl}" target="_blank">#{event.name}</a>
             </h3>
+            <p class="event-date">#{event_date}</p>
             <p class="event-location">#{event.location}</p>
           </div>
         """
