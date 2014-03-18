@@ -139,8 +139,6 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       google.maps.event.trigger @map, 'resize'
     mark: (event, index)->
 
-      # console.log event.start
-
       # If the event is in the past, give it a gray icon.
       event_date = new Date(event.start*1000)
       current_date = new Date()
@@ -149,10 +147,6 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
         day: 'numeric',
         year: 'numeric'
       })
-
-      console.log event_date
-      console.log current_date
-      console.log event_date_formatted
 
       if event_date > current_date
         marker_image = "marker.png"
@@ -177,6 +171,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       else
         event.desiredUrl = "https://developers.google.com" + event.defaultEventUrl
 
+      # Build the infobox.
       info_content = """
           <div class="event-infobox">
             <h3 class="event-title">

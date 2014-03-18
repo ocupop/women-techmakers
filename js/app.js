@@ -84,9 +84,6 @@
           day: 'numeric',
           year: 'numeric'
         });
-        console.log(event_date);
-        console.log(current_date);
-        console.log(event_date_formatted);
         if (event_date > current_date) {
           marker_image = "marker.png";
           event_date = event_date_formatted;
