@@ -151,9 +151,11 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       if event_date > current_date
         marker_image = "marker.png"
         event_date = event_date_formatted
+        event_title = "<a href=\"#{event.desiredUrl}\" target=\"_blank\">#{event.name}</a>"
       else
         marker_image = "marker-gray.png"
         event_date = event_date_formatted + " <span class=\"past-event-notice\">(Past Event)</span>"
+        event_title = event.name
 
       # Construct the location marker.
       marker = new google.maps.Marker {
@@ -175,7 +177,7 @@ APP.controller 'MapCtrl', ($scope, EventMap)->
       info_content = """
           <div class="event-infobox">
             <h3 class="event-title">
-              <a href="#{event.desiredUrl}" target="_blank">#{event.name}</a>
+              #{event_title}
             </h3>
             <p class="event-date">#{event_date}</p>
             <p class="event-location">#{event.location}</p>

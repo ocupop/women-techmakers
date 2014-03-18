@@ -75,7 +75,7 @@
         return google.maps.event.trigger(this.map, 'resize');
       },
       mark: function(event, index) {
-        var current_date, event_date, event_date_formatted, info, info_content, marker, marker_image,
+        var current_date, event_date, event_date_formatted, event_title, info, info_content, marker, marker_image,
           _this = this;
         event_date = new Date(event.start * 1000);
         current_date = new Date();
@@ -87,9 +87,11 @@
         if (event_date > current_date) {
           marker_image = "marker.png";
           event_date = event_date_formatted;
+          event_title = "<a href=\"" + event.desiredUrl + "\" target=\"_blank\">" + event.name + "</a>";
         } else {
           marker_image = "marker-gray.png";
           event_date = event_date_formatted + " <span class=\"past-event-notice\">(Past Event)</span>";
+          event_title = event.name;
         }
         marker = new google.maps.Marker({
           position: event.latlng,
@@ -104,7 +106,7 @@
         } else {
           event.desiredUrl = "https://developers.google.com" + event.defaultEventUrl;
         }
-        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    <a href=\"" + event.desiredUrl + "\" target=\"_blank\">" + event.name + "</a>\n  </h3>\n  <p class=\"event-date\">" + event_date + "</p>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
+        info_content = "<div class=\"event-infobox\">\n  <h3 class=\"event-title\">\n    " + event_title + "\n  </h3>\n  <p class=\"event-date\">" + event_date + "</p>\n  <p class=\"event-location\">" + event.location + "</p>\n</div>";
         info = new InfoBox({
           content: info_content
         });
