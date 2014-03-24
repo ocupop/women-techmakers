@@ -471,12 +471,17 @@ button {
 /* line 1, ../sass/_about.sass */
 .about-section {
   background: #4571b4;
-  color: white; }
+  color: white;
+  padding-bottom: 48px; }
+  /* line 6, ../sass/_about.sass */
+  .about-section .paragraphs {
+    float: left;
+    width: 645px; }
 
-/* line 5, ../sass/_about.sass */
+/* line 10, ../sass/_about.sass */
 .google-plus-badge {
   float: right;
-  margin-left: 24px;
+  margin-left: 20px;
   width: 265px; }
 
 /* line 1, ../sass/_social.sass */
