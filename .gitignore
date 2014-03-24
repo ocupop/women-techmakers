@@ -3,6 +3,7 @@ node_modules/
 bower_components/
 .sass-cache/
 codekit-config.json
+config.codekit
 error_log
 
 # OS-generated files

@@ -1,7 +1,7 @@
 /*! Google Developers: Women Techmakers
  * Designed and Developed by Ocupop (2014)
  */
-/* line 17, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,46 +22,46 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
 /* line 1, ../sass/_base.sass */
 * {
   position: relative;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* line 5, ../sass/_base.sass */
@@ -148,36 +148,32 @@ button {
     color: white;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF4FC3F7', endColorstr='#FF4FC3F7');
-    background-image: -webkit-linear-gradient(-20deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%);
-    background-image: -moz-linear-gradient(-20deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%);
-    background-image: -o-linear-gradient(-20deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%);
+    background-image: -moz-linear-gradient(110deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%);
+    background-image: -webkit-linear-gradient(110deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%);
     background-image: linear-gradient(-20deg, #47afde 0%, #47afde 50%, #4fc3f7 50%, #4fc3f7 100%); }
   /* line 82, ../sass/_base.sass */
   .button.green, .events-section .location-switch-modes button.green {
     color: white;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF00BFA5', endColorstr='#FF00BFA5');
-    background-image: -webkit-linear-gradient(-20deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%);
-    background-image: -moz-linear-gradient(-20deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%);
-    background-image: -o-linear-gradient(-20deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%);
+    background-image: -moz-linear-gradient(110deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%);
+    background-image: -webkit-linear-gradient(110deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%);
     background-image: linear-gradient(-20deg, #009884 0%, #009884 50%, #00bfa5 50%, #00bfa5 100%); }
   /* line 91, ../sass/_base.sass */
   .button.gray, .events-section .location-switch-modes button.gray {
     color: #bbbbbb;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEEEEEE', endColorstr='#FFDDDDDD');
-    background-image: -webkit-linear-gradient(-20deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%);
-    background-image: -moz-linear-gradient(-20deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%);
-    background-image: -o-linear-gradient(-20deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%);
+    background-image: -moz-linear-gradient(110deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%);
+    background-image: -webkit-linear-gradient(110deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%);
     background-image: linear-gradient(-20deg, #d1d1d1 0%, #d1d1d1 50%, #dddddd 50%, #dddddd 100%); }
   /* line 100, ../sass/_base.sass */
   .button.white, .events-section .location-switch-modes button {
     color: #999999;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEEEEEE', endColorstr='#FFDDDDDD');
-    background-image: -webkit-linear-gradient(-20deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%);
-    background-image: -moz-linear-gradient(-20deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%);
-    background-image: -o-linear-gradient(-20deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%);
+    background-image: -moz-linear-gradient(110deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%);
+    background-image: -webkit-linear-gradient(110deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%);
     background-image: linear-gradient(-20deg, #ededed 0%, #ededed 50%, #fafafa 50%, #fafafa 100%); }
 
 /* line 1, ../sass/_layers.sass */
@@ -255,11 +251,9 @@ button {
   overflow: hidden; }
   /* line 7, ../sass/_header.sass */
   .page-header .header-gradient {
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(34%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 34%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     height: 200px;
     position: absolute;
@@ -479,6 +473,12 @@ button {
   background: #4571b4;
   color: white; }
 
+/* line 5, ../sass/_about.sass */
+.google-plus-badge {
+  float: right;
+  margin-left: 24px;
+  width: 265px; }
+
 /* line 1, ../sass/_social.sass */
 .social-section {
   background: #4fc3f7;
@@ -518,8 +518,8 @@ button {
   text-align: center; }
   /* line 27, ../sass/_events.sass */
   .events-section .location-switch-modes button {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
     cursor: pointer;
     display: inline-block;
@@ -609,9 +609,9 @@ button {
     height: 100%;
     left: 0;
     opacity: 0;
-    -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
     transition: opacity 1s; }
     /* line 121, ../sass/_events.sass */
     .csstransforms .location-section .top-border:before, .csstransforms .location-section .top-border:after,
@@ -629,30 +629,26 @@ button {
       top: -2px;
       left: 0;
       border-left: 4px solid #4571b4;
-      -webkit-transform: rotate(30deg);
       -moz-transform: rotate(30deg);
       -ms-transform: rotate(30deg);
-      -o-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
       transform: rotate(30deg);
-      -webkit-transform-origin: 0 0;
       -moz-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
-      -o-transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
       transform-origin: 0 0; }
     /* line 138, ../sass/_events.sass */
     .csstransforms .location-section .top-border:after {
       top: 0;
       right: -1px;
       border-right: 4px solid #4571b4;
-      -webkit-transform: rotate(-30deg);
       -moz-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
-      -o-transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg);
       transform: rotate(-30deg);
-      -webkit-transform-origin: 0 0;
       -moz-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
-      -o-transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
       transform-origin: 0 0; }
   /* line 145, ../sass/_events.sass */
   .csstransforms .location-section .bottom-border {
@@ -663,30 +659,26 @@ button {
       bottom: 0;
       left: -1px;
       border-left: 4px solid #4571b4;
-      -webkit-transform: rotate(-30deg);
       -moz-transform: rotate(-30deg);
       -ms-transform: rotate(-30deg);
-      -o-transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg);
       transform: rotate(-30deg);
-      -webkit-transform-origin: 100% 100%;
       -moz-transform-origin: 100% 100%;
       -ms-transform-origin: 100% 100%;
-      -o-transform-origin: 100% 100%;
+      -webkit-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
     /* line 156, ../sass/_events.sass */
     .csstransforms .location-section .bottom-border:after {
       bottom: -2px;
       right: 0;
       border-right: 4px solid #4571b4;
-      -webkit-transform: rotate(30deg);
       -moz-transform: rotate(30deg);
       -ms-transform: rotate(30deg);
-      -o-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
       transform: rotate(30deg);
-      -webkit-transform-origin: 100% 100%;
       -moz-transform-origin: 100% 100%;
       -ms-transform-origin: 100% 100%;
-      -o-transform-origin: 100% 100%;
+      -webkit-transform-origin: 100% 100%;
       transform-origin: 100% 100%; }
   /* line 163, ../sass/_events.sass */
   .csstransforms .location-section .event-wrapper.ui-show {
